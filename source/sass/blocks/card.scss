@@ -1,0 +1,43 @@
+.cards-list {
+  background-color: $color-tangaroa;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  padding: 35px 25px;
+}
+
+.card-link {
+  font-family: $ff-main-font;
+  color: $color-alice-blue;
+}
+
+.card-link h4,
+.card-link h5,
+.card-link p {
+  margin: 0;
+  padding: 0;
+}
+
+.card-link h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+
+.card-link h5 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.card-link p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}

@@ -18,53 +18,179 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <!-- Opened menu by JS: .header-js header-open-js -->
+      <!-- Opened menu by CSS: .no-js -->
+      <header class="header header-js">
+        <div class="container">
+          <div class="header-wrapper">
+            <a class="logo">
+              <svg width="70" height="38">
+                <use xlink:href="./img/sprite/sprite.svg#logotype"></use>
+              </svg>
+            </a>
+            <button class="main-nav-toogle" type="button" aria-label="Кнопка открытия меню">
+              <svg class="main-nav-toogle--opened" width="25" height="25">
+                <use xlink:href="./img/sprite/sprite.svg#icon-open"></use>
+              </svg>
+              <svg class="main-nav-toogle--close" width="15" height="15">
+                <use xlink:href="./img/sprite/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="navigation">
+              <ul class="navigation-list">
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#section1">Преимущества</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#section2">Направления</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#section3">Ближайшие круизы</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#section4">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </header>
       <main>
-        <section class="intro">
+        <h1 class="visually-hidden">Круизы в Антарктику</h1>
+        <section class="main-screen" style="background-image: url('./img/bg-main-screen-desktop.jpg');">
           <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+            <div class="main-screen-wrapper">
+              <h2>Круизы в Антарктику</h2>
+              <p>Волшебный мир айсбергов и пингвинов</p>
+            </div>
           </div>
         </section>
+        <article class="travels">
+          <div class="container">
+            <div class="travels-wrapper">
+              <div class="travels-description">
+                <h3>Путешествие нa край Земли</h3>
+                <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+              </div>
+              <img src="./img/travels-desktop.jpg" srcset="./img/travels-desktop@2x.jpg 2x" width="560" height="301" alt="Изобрадение пингвина">
+            </div>
+          </div>
+        </article>
+        <ul class="cards-list" id="section1">
+          <li class="card">
+            <a class="card-link">
+              <h4 class="card__cruise-title">Круиз "Элайн"</h4>
+              <h5 class="card__option-name">Маршрут</h5>
+              <p class="card__option-description">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+              <h5 class="card__option-name">Порт отправления</h5>
+              <p class="card__option-description">Буэнос-Айрес</p>
+              <h5 class="card__option-name">Продолжительность</h5>
+              <p class="card__option-description">20 дней</p>
+              <h5 class="card__option-name">Цена</h5>
+              <p class="card__option-description">от 14500 $</p>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="cards-list" id="section2">
+          <li class="card">
+            <a class="card-link">
+              <h4 class="card__cruise-title">Круиз "Элайн"</h4>
+              <h5 class="card__option-name">Маршрут</h5>
+              <p class="card__option-description">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+              <h5 class="card__option-name">Порт отправления</h5>
+              <p class="card__option-description">Буэнос-Айрес</p>
+              <h5 class="card__option-name">Продолжительность</h5>
+              <p class="card__option-description">20 дней</p>
+              <h5 class="card__option-name">Цена</h5>
+              <p class="card__option-description">от 14500 $</p>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="cards-list" id="section3">
+          <li class="card">
+            <a class="card-link">
+              <h4 class="card__cruise-title">Круиз "Элайн"</h4>
+              <h5 class="card__option-name">Маршрут</h5>
+              <p class="card__option-description">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+              <h5 class="card__option-name">Порт отправления</h5>
+              <p class="card__option-description">Буэнос-Айрес</p>
+              <h5 class="card__option-name">Продолжительность</h5>
+              <p class="card__option-description">20 дней</p>
+              <h5 class="card__option-name">Цена</h5>
+              <p class="card__option-description">от 14500 $</p>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="cards-list" id="section4">
+          <li class="card">
+            <a class="card-link">
+              <h4 class="card__cruise-title">Круиз "Элайн"</h4>
+              <h5 class="card__option-name">Маршрут</h5>
+              <p class="card__option-description">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+              <h5 class="card__option-name">Порт отправления</h5>
+              <p class="card__option-description">Буэнос-Айрес</p>
+              <h5 class="card__option-name">Продолжительность</h5>
+              <p class="card__option-description">20 дней</p>
+              <h5 class="card__option-name">Цена</h5>
+              <p class="card__option-description">от 14500 $</p>
+            </a>
+          </li>
+        </ul>
+        </main>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <a class="logo">
+              <svg width="70" height="38">
+                <use xlink:href="./img/sprite/sprite.svg#logotype"></use>
+              </svg>
+            </a>
+            <button class="main-nav-toogle" type="button" aria-label="Кнопка открытия меню">
+              <svg class="main-nav-toogle--opened" width="25" height="25">
+                <use xlink:href="./img/sprite/sprite.svg#icon-open"></use>
+              </svg>
+              <svg class="main-nav-toogle--close" width="15" height="15">
+                <use xlink:href="./img/sprite/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="navigation">
+              <ul class="navigation-list">
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#section1">Преимущества</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#section2">Направления</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#section3">Ближайшие круизы</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#section4">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </footer>
     </div>
 
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
+    <template id="element-template">
+      <a class="card-link">
+        <h4 class="card__cruise-title">Круиз "Элайн"</h4>
+        <h5 class="card__option-name">Маршрут</h5>
+        <p class="card__option-description">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+        <h5 class="card__option-name">Порт отправления</h5>
+        <p class="card__option-description">Буэнос-Айрес</p>
+        <h5 class="card__option-name">Продолжительность</h5>
+        <p class="card__option-description">20 дней</p>
+        <h5 class="card__option-name">Цена</h5>
+        <p class="card__option-description">от 14500 $</p>
+      </a>
+    </template>
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

@@ -5,6 +5,42 @@ import {initModals} from './modules/modals/init-modals';
 
 window.addEventListener('DOMContentLoaded', () => {
 
+  // скролл до блоков
+  document.querySelectorAll('.wrapper a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(anchor.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth',
+      });
+    });
+  });
+
+  // открытие-закрытие меню
+  const menuButton = document.querySelector('.main-nav-toogle');
+  const svg = menuButton.querySelectorAll('svg');
+  const buttonOpen = menuButton.querySelector('.main-nav-toogle--opened');
+  const buttonClose = menuButton.querySelector('.main-nav-toogle--close');
+  const nav = document.querySelector('.navigation-list');
+  const header = document.querySelector('.header');
+
+  menuButton.addEventListener('click', () => {
+    for (let i = 0; i < svg.length; i++) {
+      const currentIcon = svg[i];
+
+      currentIcon.classList.toggle('main-nav-toogle--hidden');
+
+      if (buttonOpen.classList.contains('main-nav-toogle--hidden')) {
+        buttonClose.style.display = 'block';
+        nav.style.display = 'block';
+        header.classList.add('header-open-js');
+      } else {
+        buttonClose.style.display = 'none';
+        nav.style.display = 'none';
+        header.classList.remove('header-open-js');
+      }
+    }
+  });
+
   // Utils
   // ---------------------------------
 
