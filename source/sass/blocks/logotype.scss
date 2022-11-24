@@ -9,11 +9,15 @@
 }
 
 .header-close-menu-js .logo {
-  fill: $color-alice-blue;
+  @include vp-767 {
+    fill: $color-alice-blue;
+  }
 }
 
 .header-open-menu-js .logo {
-  fill: $color-tangaroa;
+  @include vp-767 {
+    fill: $color-tangaroa;
+  }
 }
 
 .logo svg {

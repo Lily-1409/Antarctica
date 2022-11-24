@@ -2,11 +2,11 @@
   padding: 120px 71px 145px;
 
   @include vp-1023 {
-    padding: 120px 21px 145px;
+    padding: 100px 26px 95px 21px;
   }
 
-  @include vp-1023 {
-    padding: 120px 0 145px;
+  @include vp-767 {
+    padding: 58px 0 85px;
   }
 }
 
@@ -20,8 +20,16 @@
 }
 
 .travels-wrapper img {
-  width: 324px;
-  height: 174px;
+
+  @include vp-1023 {
+    width: 324px;
+    height: 174px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    height: 156px;
+  }
 }
 
 .travels-description {
@@ -32,7 +40,7 @@
 
   @include vp-1023 {
     margin-top: -10px;
-    margin-right: 70px;
+    margin-right: 22px;
   }
 
   @include vp-767 {
@@ -55,6 +63,7 @@
     font-size: 26px;
     line-height: 36px;
     margin-bottom: 15px;
+    max-width: 210px;
   }
 
   @include vp-767 {
@@ -72,7 +81,8 @@
   line-height: 24px;
 
   @include vp-767 {
-    margin-bottom: 50px;
+    margin-bottom: 42px;
+    min-width: 280px;
   }
 }
 

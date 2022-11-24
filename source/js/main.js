@@ -15,11 +15,11 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // открытие-закрытие меню
+  // открытие-закрытие мобильного меню
   const menuButton = document.querySelector('.main-nav-toogle');
   const svg = menuButton.querySelectorAll('svg');
-  const buttonOpen = menuButton.querySelector('.main-nav-toogle--opened');
-  const buttonClose = menuButton.querySelector('.main-nav-toogle--close');
+  const iconOpen = menuButton.querySelector('.main-nav-toogle__iconOpen');
+  const iconClose = menuButton.querySelector('.main-nav-toogle__iconClose');
   const nav = document.querySelector('.navigation-list');
   const header = document.querySelector('.header');
 
@@ -29,13 +29,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
       currentIcon.classList.toggle('main-nav-toogle--hidden');
 
-      if (buttonOpen.classList.contains('main-nav-toogle--hidden')) {
-        buttonClose.style.display = 'block';
-        nav.style.display = 'block';
+      if (iconOpen.classList.contains('main-nav-toogle--hidden')) {
+        iconClose.style.display = 'block';
+        nav.classList.add('navigation-list--active');
         header.classList.add('header-open-menu-js');
       } else {
-        buttonClose.style.display = 'none';
-        nav.style.display = 'none';
+        iconClose.style.display = 'none';
         header.classList.remove('header-open-menu-js');
       }
     }

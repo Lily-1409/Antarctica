@@ -1,0 +1,37 @@
+.networks-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  width: 119px;
+  justify-content: space-between;
+  margin-right: -5px;
+
+  @include vp-1023 {
+    margin-top: -3px;
+    width: 103px;
+  }
+
+  @include vp-767 {
+    margin-top: -4px;
+    width: 103px;
+    margin-left: -10px;
+  }
+}
+
+.networks-item svg {
+  margin: 5px;
+  min-width: 20px;
+
+  @include vp-1023 {
+    width: 16px;
+    height: 16px;
+  }
+
+  @include vp-767 {
+    width: 16px;
+    height: 16px;
+  }
+}

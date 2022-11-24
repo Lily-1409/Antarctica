@@ -11,7 +11,8 @@
   margin-top: -115px;
 
   @include vp-1023 {
-    min-height: 638px;
+    min-height: 666px;
+    background-position: -19px 12px;
   }
 
   @include vp-767 {
@@ -66,15 +67,19 @@
   line-height: 24px;
   color: $color-alice-blue;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 283px;
 
   @include vp-1023 {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
+    margin-bottom: 280px;
   }
 
   @include vp-767 {
     font-size: 16px;
     line-height: 22px;
+    max-width: 210px;
+    margin-bottom: 185px;
   }
 }
