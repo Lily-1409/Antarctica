@@ -32,11 +32,11 @@ window.addEventListener('DOMContentLoaded', () => {
       if (buttonOpen.classList.contains('main-nav-toogle--hidden')) {
         buttonClose.style.display = 'block';
         nav.style.display = 'block';
-        header.classList.add('header-open-js');
+        header.classList.add('header-open-menu-js');
       } else {
         buttonClose.style.display = 'none';
         nav.style.display = 'none';
-        header.classList.remove('header-open-js');
+        header.classList.remove('header-open-menu-js');
       }
     }
   });

@@ -803,11 +803,7 @@ button,
   justify-content: space-between;
 }
 
-.no-js .main-nav-toogle {
-  display: none;
-}
-
-.header-js .main-nav-toogle {
+.header-close-menu-js .main-nav-toogle {
   display: block;
 }
 
@@ -837,11 +833,11 @@ button,
   fill: #f9fbfd;
 }
 
-.header-js .logo {
+.header-close-menu-js .logo {
   fill: #f9fbfd;
 }
 
-.header-open-js .logo {
+.header-open-menu-js .logo {
   fill: #011c40;
 }
 
@@ -850,10 +846,8 @@ button,
   top: 0;
   left: 0;
   background-color: #4071b4;
-  -o-object-position: 50%;
-  object-position: 50%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  background-position: 50%;
+  background-size: cover;
   background-repeat: no-repeat;
   min-height: 650px;
   z-index: 1;
@@ -1167,23 +1161,20 @@ button,
     -ms-flex-pack: start;
     justify-content: flex-start;
     background-color: #f9fbfd;
+    margin-left: 35px;
   }
 
-  .header-js {
+  .header-close-menu-js {
     background-color: transparent;
   }
 
-  .header-open-js {
+  .header-open-menu-js {
     height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
     width: 89%;
     background-color: #f9fbfd;
-  }
-
-  .no-js {
-    margin-left: 35px;
   }
 
   .header-wrapper {
@@ -1197,17 +1188,7 @@ button,
     padding: 20px 10px 25px;
   }
 
-  .no-js .header-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  }
-
-  .header-js .main-nav-toogle--open {
+  .header-close-menu-js .main-nav-toogle--open {
     display: block;
   }
 
@@ -1271,7 +1252,7 @@ button,
     margin-bottom: 50px;
   }
 
-  .header-js .navigation-list {
+  .header-close-menu-js .navigation-list {
     display: none;
   }
 
