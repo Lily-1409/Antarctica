@@ -834,6 +834,7 @@ button,
   top: 0;
   left: 0;
   background-color: #4071b4;
+  background-image: url("../img/bg-main-screen-desktop.jpg");
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -948,48 +949,113 @@ button,
   border-bottom: 1px solid #f9fbfd;
 }
 
-.cards-list {
-  background-color: #011c40;
+.cruise {
+  padding: 87px 87px 121px;
+}
+
+.cruise h3 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #011c40;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  margin-bottom: 47px;
+  text-align: center;
+}
+
+.cruise-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
 }
 
-.card {
-  padding: 35px 25px;
+.cruise-item {
+  padding: 29px 25px 34px;
+  background-color: #011c40;
+  min-height: 386px;
+  position: relative;
 }
 
-.card-link {
+.cruise-item:hover .cruise-card {
+  display: none;
+}
+
+.cruise-item:hover .cruise-decription-wrapper {
+  display: block;
+}
+
+.cruise-item {
   font-family: "Montserrat", "Arial", sans-serif;
   color: #f9fbfd;
 }
 
-.card-link h4,
-.card-link h5,
-.card-link p {
+.cruise-item h4,
+.cruise-item h5,
+.cruise-item span {
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #f9fbfd;
   margin: 0;
   padding: 0;
 }
 
-.card-link h4 {
+.cruise-item h4 {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  margin-bottom: 25px;
+  margin-bottom: 14px;
 }
 
-.card-link h5 {
+.cruise-card h4 {
+  position: absolute;
+  bottom: 8px;
+  left: 29px;
+}
+
+.cruise-card img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.cruise-decription-wrapper {
+  display: none;
+}
+
+.cruise-decription {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 32px;
+}
+
+.cruise-decription h5 {
   font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cruise-decription span {
+  display: block;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 10px;
 }
 
-.card-link p {
+.cruise-button {
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 20px;
+  line-height: 21px;
+  padding-top: 9px;
 }
 
 .footer {
@@ -1057,8 +1123,10 @@ button,
 
 .advantages {
   padding: 110px 0 120px;
+  background-image: url("../img/bg-advantages-desktop.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .advantages h3 {
@@ -1146,6 +1214,188 @@ button,
   min-width: 20px;
 }
 
+.booking-form {
+  background-image: url("../../img/bg-form-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.form-wrapper {
+  position: relative;
+  padding: 50px 129px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form-description {
+  margin-right: 144px;
+}
+
+.form-description h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #011c40;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+.form-description p {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #011c40;
+  max-width: 350px;
+}
+
+.form-block {
+  background-color: #011c40;
+  padding: 43px 50px 50px;
+  max-width: 404px;
+}
+
+.form-block p {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #f9fbfd;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 27px;
+}
+
+.form__name,
+.form__phone,
+.form__mail {
+  margin-bottom: 20px;
+}
+
+.form__name label,
+.form__phone label,
+.form__mail label {
+  display: none;
+}
+
+.form__name input,
+.form__phone input,
+.form__mail input {
+  height: 43px;
+  border: none;
+  width: 100%;
+  padding-left: 14px;
+}
+
+.form__name input:hover,
+.form__phone input:hover,
+.form__mail input:hover,
+.form__name input:focus,
+.form__phone input:focus,
+.form__mail input:focus {
+  background-color: #d8d8d9;
+}
+
+.form__name input::-webkit-input-placeholder,
+.form__phone input::-webkit-input-placeholder,
+.form__mail input::-webkit-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form__button input {
+  height: 40px;
+}
+
+.form__checkbox {
+  margin-bottom: 36px;
+}
+
+.form__checkbox input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form__checkbox label {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: #f9fbfd;
+  cursor: pointer;
+  position: relative;
+}
+
+.form__checkbox span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #f9fbfd;
+  border: 1px solid #f9fbfd;
+}
+
+.form__checkbox span {
+  position: relative;
+  display: block;
+  padding-left: 22px;
+}
+
+.form__checkbox:hover span::before {
+  background-color: #d8d8d9;
+  border: 1px solid #d8d8d9;
+}
+
+.form__checkbox label input[type=checkbox]:focus + span::before {
+  background-color: #d8d8d9;
+  border: 1px solid #d8d8d9;
+}
+
+.form__checkbox span::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 3px;
+  -webkit-transform: translateY(80%);
+  -ms-transform: translateY(80%);
+  transform: translateY(80%);
+  display: none;
+  width: 8px;
+  height: 6px;
+  background-image: url("../img/svg/icon-checked.svg");
+  background-repeat: no-repeat;
+}
+
+.form__checkbox label input[type=checkbox]:checked + span::after {
+  display: block;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1209,8 +1459,8 @@ button,
   }
 
   .main-screen {
+    background-image: url("../img/bg-main-screen-tablet.jpg");
     min-height: 666px;
-    background-position: -19px 12px;
   }
 
   .main-screen-wrapper {
@@ -1265,6 +1515,16 @@ button,
     line-height: 17px;
   }
 
+  .cruise h3 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .cruise-list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .footer {
     padding: 50px 20px 50px 23px;
   }
@@ -1297,6 +1557,7 @@ button,
 
   .advantages {
     padding: 90px 0 100px;
+    background-image: url("../img/bg-advantages-tablet.jpg");
   }
 
   .advantages h3 {
@@ -1337,6 +1598,49 @@ button,
   .networks-item svg {
     width: 16px;
     height: 16px;
+  }
+
+  .form-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 94px 149px 100px 151px;
+  }
+
+  .form-description {
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .form-description h2 {
+    font-size: 34px;
+    line-height: 51px;
+  }
+
+  .form-block {
+    padding-top: 45px;
+    padding-bottom: 52px;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-resolution: 1.5), only screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), only screen and (max-width: 1023px) and (min-resolution: 144dpi) {
+  .main-screen {
+    background-image: url("../img/bg-main-screen-tablet@2x.jpg");
+  }
+
+  .advantages {
+    background-image: url("../img/bg-advantages-tablet@2x.jpg");
   }
 }
 
@@ -1438,6 +1742,7 @@ button,
 
   .main-screen {
     min-height: 500px;
+    background-image: url("../img/bg-main-screen-mobile.jpg");
   }
 
   .main-screen-wrapper {
@@ -1518,6 +1823,16 @@ button,
     line-height: 22px;
   }
 
+  .cruise h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .cruise-list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
   .footer {
     padding: 40px 0;
     margin-left: -2px;
@@ -1565,6 +1880,7 @@ button,
 
   .advantages {
     padding: 58px 0 68px;
+    background-image: url("../img/bg-advantages-mobile.jpg");
   }
 
   .advantages h3 {
@@ -1601,6 +1917,57 @@ button,
     width: 16px;
     height: 16px;
   }
+
+  .form-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 65px 0 100px;
+  }
+
+  .form-description {
+    margin-bottom: 42px;
+  }
+
+  .form-description h2 {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .form-description p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .form-block {
+    padding: 35px 28px 50px;
+  }
+
+  .form-block p {
+    line-height: 25px;
+    margin-bottom: 29px;
+  }
+
+  .form__name input,
+  .form__phone input,
+  .form__mail input {
+    padding-left: 16px;
+  }
+
+  .form__checkbox label {
+    line-height: 12px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-resolution: 1.5), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), only screen and (max-width: 767px) and (min-resolution: 144dpi) {
+  .main-screen {
+    background-image: url("../img/bg-main-screen-mobile@2x.jpg");
+  }
+
+  .advantages {
+    background-image: url("../img/bg-advantages-mobile@2x.jpg");
+  }
 }
 
 @media (hover: hover) {
@@ -1610,5 +1977,15 @@ button,
 
   .main-nav-toogle:hover:not(.focus-visible) {
     opacity: 0.7;
+  }
+}
+
+@media only screen and (min-resolution: 1.5), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-resolution: 144dpi) {
+  .main-screen {
+    background-image: url("../img/bg-main-screen-desktop@2x.jpg");
+  }
+
+  .advantages {
+    background-image: url("../img/bg-advantages-desktop@2x.jpg");
   }
 }

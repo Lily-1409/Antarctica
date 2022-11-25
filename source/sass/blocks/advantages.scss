@@ -1,14 +1,33 @@
 .advantages {
   padding: 110px 0 120px;
+  background-image: url("../img/bg-advantages-desktop.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+
+  @media only screen and (min-resolution: 1.5),
+    only screen and (min-resolution: 144dpi) {
+    background-image: url("../img/bg-advantages-desktop@2x.jpg");
+  }
 
   @include vp-1023 {
     padding: 90px 0 100px;
+    background-image: url('../img/bg-advantages-tablet.jpg');
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/bg-advantages-tablet@2x.jpg");
+    }
   }
 
   @include vp-767 {
     padding: 58px 0 68px;
+    background-image: url('../img/bg-advantages-mobile.jpg');
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/bg-advantages-mobile@2x.jpg");
+    }
   }
 }
 

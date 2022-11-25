@@ -1,0 +1,124 @@
+.cruise {
+  padding: 87px 87px 121px;
+}
+
+.cruise h3 {
+  font-family: $ff-main-font;
+  color: $color-tangaroa;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  margin-bottom: 47px;
+  text-align: center;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.cruise-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cruise-item {
+  padding: 29px 25px 34px;
+  background-color: $color-tangaroa;
+  min-height: 386px;
+  position: relative;
+}
+
+.cruise-item:hover .cruise-card {
+  display: none;
+}
+
+.cruise-item:hover .cruise-decription-wrapper {
+  display: block;
+}
+
+.cruise-item {
+  font-family: $ff-main-font;
+  color: $color-alice-blue;
+}
+
+.cruise-item h4,
+.cruise-item h5,
+.cruise-item span {
+  font-family: $ff-main-font;
+  color: $color-alice-blue;
+  margin: 0;
+  padding: 0;
+}
+
+.cruise-item h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 14px;
+}
+
+.cruise-card h4 {
+  position: absolute;
+  bottom: 8px;
+  left: 29px;
+}
+
+.cruise-card img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.cruise-decription-wrapper {
+  display: none;
+}
+
+.cruise-decription {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 32px;
+}
+
+.cruise-decription h5 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cruise-decription span {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.cruise-button {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 9px;
+}

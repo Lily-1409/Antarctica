@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   background-color: $color-steel-blue-bg-main;
+  background-image: url("../img/bg-main-screen-desktop.jpg");
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,13 +11,29 @@
   z-index: 1;
   margin-top: -115px;
 
+  @media only screen and (min-resolution: 1.5),
+    only screen and (min-resolution: 144dpi) {
+    background-image: url("../img/bg-main-screen-desktop@2x.jpg");
+  }
+
   @include vp-1023 {
+    background-image: url('../img/bg-main-screen-tablet.jpg');
     min-height: 666px;
-    background-position: -19px 12px;
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/bg-main-screen-tablet@2x.jpg");
+    }
   }
 
   @include vp-767 {
     min-height: 500px;
+    background-image: url('../img/bg-main-screen-mobile.jpg');
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/bg-main-screen-mobile@2x.jpg");
+    }
   }
 }
 
