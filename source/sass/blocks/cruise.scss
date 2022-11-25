@@ -1,5 +1,13 @@
 .cruise {
   padding: 87px 87px 121px;
+
+  @include vp-1023 {
+    padding: 87px 87px 100px;
+  }
+
+  @include vp-767 {
+    padding: 56px 0 65px;
+  }
 }
 
 .cruise h3 {
@@ -16,11 +24,13 @@
   @include vp-1023 {
     font-size: 26px;
     line-height: 39px;
+    margin-bottom: 52px;
   }
 
   @include vp-767 {
     font-size: 24px;
     line-height: 36px;
+    margin-bottom: 30px;
   }
 }
 

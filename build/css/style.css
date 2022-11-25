@@ -1237,6 +1237,13 @@ button,
 
 .form-description {
   margin-right: 144px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .form-description h2 {
@@ -1259,7 +1266,6 @@ button,
   font-size: 18px;
   line-height: 27px;
   color: #011c40;
-  max-width: 350px;
 }
 
 .form-block {
@@ -1515,9 +1521,14 @@ button,
     line-height: 17px;
   }
 
+  .cruise {
+    padding: 87px 87px 100px;
+  }
+
   .cruise h3 {
     font-size: 26px;
     line-height: 39px;
+    margin-bottom: 52px;
   }
 
   .cruise-list {
@@ -1610,16 +1621,6 @@ button,
 
   .form-description {
     margin-right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     margin-bottom: 50px;
   }
 
@@ -1823,9 +1824,14 @@ button,
     line-height: 22px;
   }
 
+  .cruise {
+    padding: 56px 0 65px;
+  }
+
   .cruise h3 {
     font-size: 24px;
     line-height: 36px;
+    margin-bottom: 30px;
   }
 
   .cruise-list {
@@ -1928,16 +1934,23 @@ button,
 
   .form-description {
     margin-bottom: 42px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .form-description h2 {
     font-size: 24px;
     line-height: 31px;
+    text-align: center;
+    margin-bottom: 13px;
   }
 
   .form-description p {
     font-size: 16px;
     line-height: 22px;
+    text-align: center;
+    margin-bottom: -10px;
   }
 
   .form-block {
@@ -1947,6 +1960,8 @@ button,
   .form-block p {
     line-height: 25px;
     margin-bottom: 29px;
+    text-align: center;
+    margin: 0 20px 29px 20px;
   }
 
   .form__name input,
