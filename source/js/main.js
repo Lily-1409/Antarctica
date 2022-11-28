@@ -40,6 +40,18 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  function init() {
+    const map = new window.ymaps.Map('map', {
+      center: [59.93885879814745, 30.325438403329063],
+      zoom: 14,
+    });
+
+    const placemark = new window.ymaps.Placemark(new window.ymaps.GeoPoint(59.93885879814745, 30.325438403329063));
+    map.addOverlay(placemark);
+  }
+
+  window.ymaps.ready(init);
+
   // Utils
   // ---------------------------------
 

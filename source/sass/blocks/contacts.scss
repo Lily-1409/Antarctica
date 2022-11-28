@@ -1,13 +1,13 @@
 .contacts {
   background-color: $color-alice-blue;
-  padding: 120px 0;
+  padding: 120px 0 122px;
 
   @include vp-1023 {
     padding: 100px 0;
   }
 
   @include vp-767 {
-    padding: 57px 0 81px;
+    padding: 57px 0 65px;
   }
 }
 
@@ -28,19 +28,27 @@
 }
 
 .map {
+  flex: 0 0 auto;
   margin-right: 100px;
+  width: 560px;
+  height: 306px;
 
   @include vp-1023 {
     margin-right: 29px;
+    width: 324px;
+    height: 335px;
   }
 
   @include vp-767 {
     order: 2;
+    width: 290px;
+    height: 316px;
   }
 }
 
 .map img {
   max-width: unset;
+  display: none;
 
   @include vp-1023 {
     width: 324px;
@@ -62,7 +70,8 @@
 
   @include vp-767 {
     order: 1;
-    padding-top: 0;
+    margin-bottom: 16px;
+    padding: 0 5px;
   }
 }
 

@@ -29,6 +29,14 @@
   }
 }
 
+.navigation {
+  margin-top: -5px;
+
+  @include vp-1023 {
+    margin-top: unset;
+  }
+}
+
 .navigation-item {
   margin-left: 33px;
 

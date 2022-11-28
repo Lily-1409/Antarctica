@@ -838,7 +838,7 @@ button,
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 650px;
+  min-height: 658px;
   z-index: 1;
   margin-top: -115px;
 }
@@ -856,7 +856,7 @@ button,
   font-size: 54px;
   line-height: 66px;
   color: #f9fbfd;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -873,7 +873,7 @@ button,
 }
 
 .travels {
-  padding: 120px 71px 145px;
+  padding: 111px 71px 145px;
 }
 
 .travels-wrapper {
@@ -883,6 +883,16 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.travels-wrapper__image {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.travels-wrapper img {
+  width: 100%;
 }
 
 .travels-description {
@@ -933,6 +943,10 @@ button,
   align-items: center;
 }
 
+.navigation {
+  margin-top: -5px;
+}
+
 .navigation-item {
   margin-left: 33px;
 }
@@ -981,19 +995,57 @@ button,
   background-color: #011c40;
   min-height: 386px;
   position: relative;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #f9fbfd;
 }
 
-.cruise-item:hover .cruise-card {
+.cruise-item-one {
+  background-image: url("../img/cards-images/card-1-desktop.jpg");
+}
+
+.cruise-item-two {
+  background-image: url("../img/cards-images/card-1-desktop.jpg");
+}
+
+.cruise-item-three {
+  background-image: url("../img/cards-images/card-3-desktop.jpg");
+}
+
+.cruise-item-four {
+  background-image: url("../img/cards-images/card-4-desktop.jpg");
+}
+
+.cruise-item-five {
+  background-image: url("../img/cards-images/card-5-desktop.jpg");
+}
+
+.cruise-item-six {
+  background-image: url("../img/cards-images/card-6-desktop.jpg");
+}
+
+.cruise-item-seven {
+  background-image: url("../img/cards-images/card-7-desktop.jpg");
+}
+
+.cruise-item-eight {
+  background-image: url("../img/cards-images/card-8-desktop.jpg");
+}
+
+.cruise-item:hover h4 {
   display: none;
 }
 
-.cruise-item:hover .cruise-decription-wrapper {
+.cruise-item:hover .cruise-decription-wrapper,
+.cruise-item:hover .cruise-decription-wrapper h4 {
   display: block;
 }
 
-.cruise-item {
-  font-family: "Montserrat", "Arial", sans-serif;
-  color: #f9fbfd;
+.cruise-item:hover {
+  background-color: #011c40;
+  background-image: unset;
 }
 
 .cruise-item h4,
@@ -1009,21 +1061,16 @@ button,
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  margin-bottom: 14px;
 }
 
 .cruise-card h4 {
   position: absolute;
-  bottom: 8px;
+  bottom: 23px;
   left: 29px;
 }
 
-.cruise-card img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  right: 0;
+.cruise-decription-wrapper h4 {
+  margin-bottom: 14px;
 }
 
 .cruise-decription-wrapper {
@@ -1034,7 +1081,7 @@ button,
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 32px;
+  margin-bottom: 26px;
 }
 
 .cruise-decription h5 {
@@ -1048,14 +1095,14 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .cruise-button {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  padding-top: 9px;
+  padding-top: 10px;
 }
 
 .footer {
@@ -1223,7 +1270,7 @@ button,
 
 .form-wrapper {
   position: relative;
-  padding: 50px 129px;
+  padding: 50px 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1289,7 +1336,7 @@ button,
 .form__name,
 .form__phone,
 .form__mail {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .form__name label,
@@ -1322,12 +1369,16 @@ button,
   color: rgba(1, 28, 64, 0.7);
 }
 
+.form__submit {
+  margin-bottom: -5px;
+}
+
 .form__button input {
   height: 40px;
 }
 
 .form__checkbox {
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 }
 
 .form__checkbox input[type=checkbox] {
@@ -1406,7 +1457,7 @@ button,
 
 .contacts {
   background-color: #f9fbfd;
-  padding: 120px 0;
+  padding: 120px 0 122px;
 }
 
 .contacts-wrapper {
@@ -1420,11 +1471,17 @@ button,
 }
 
 .map {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   margin-right: 100px;
+  width: 560px;
+  height: 306px;
 }
 
 .map img {
   max-width: unset;
+  display: none;
 }
 
 .contacts-information {
@@ -1546,7 +1603,6 @@ button,
   }
 
   .main-screen-wrapper p {
-    font-weight: 700;
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 280px;
@@ -1556,9 +1612,8 @@ button,
     padding: 100px 26px 95px 21px;
   }
 
-  .travels-wrapper img {
+  .travels-wrapper__image {
     width: 324px;
-    height: 174px;
   }
 
   .travels-description {
@@ -1577,6 +1632,10 @@ button,
     margin-top: -5px;
   }
 
+  .navigation {
+    margin-top: unset;
+  }
+
   .navigation-item {
     margin-left: 24px;
   }
@@ -1587,7 +1646,7 @@ button,
   }
 
   .cruise {
-    padding: 87px 87px 100px;
+    padding: 87px 36px 100px;
   }
 
   .cruise h3 {
@@ -1599,6 +1658,47 @@ button,
   .cruise-list {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .cruise-item {
+    padding: 29px 35px 34px;
+  }
+
+  .cruise-item-one {
+    background-image: url("../img/cards-images/card-1-tablet.jpg");
+  }
+
+  .cruise-item-two {
+    background-image: url("../img/cards-images/card-1-tablet.jpg");
+  }
+
+  .cruise-item-three {
+    background-image: url("../img/cards-images/card-3-tablet.jpg");
+  }
+
+  .cruise-item-four {
+    background-image: url("../img/cards-images/card-4-tablet.jpg");
+  }
+
+  .cruise-item-five {
+    background-image: url("../img/cards-images/card-5-tablet.jpg");
+  }
+
+  .cruise-item-six {
+    background-image: url("../img/cards-images/card-6-tablet.jpg");
+  }
+
+  .cruise-item-seven {
+    background-image: url("../img/cards-images/card-7-tablet.jpg");
+  }
+
+  .cruise-item-eight {
+    background-image: url("../img/cards-images/card-8-tablet.jpg");
+  }
+
+  .cruise-card h4 {
+    bottom: 27px;
+    left: 35px;
   }
 
   .footer {
@@ -1676,12 +1776,16 @@ button,
     height: 16px;
   }
 
+  .booking-form {
+    background-image: url("../../img/bg-form-tablet.jpg");
+  }
+
   .form-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 94px 149px 100px 151px;
+    padding: 94px 149px 104px 151px;
   }
 
   .form-description {
@@ -1714,6 +1818,8 @@ button,
 
   .map {
     margin-right: 29px;
+    width: 324px;
+    height: 335px;
   }
 
   .map img {
@@ -1739,8 +1845,44 @@ button,
     background-image: url("../img/bg-main-screen-tablet@2x.jpg");
   }
 
+  .cruise-item-one {
+    background-image: url("../img/cards-images/card-1-tablet@2x.jpg");
+  }
+
+  .cruise-item-two {
+    background-image: url("../img/cards-images/card-1-tablet@2x.jpg");
+  }
+
+  .cruise-item-three {
+    background-image: url("../img/cards-images/card-3-tablet@2x.jpg");
+  }
+
+  .cruise-item-four {
+    background-image: url("../img/cards-images/card-4-tablet@2x.jpg");
+  }
+
+  .cruise-item-five {
+    background-image: url("../img/cards-images/card-5-tablet@2x.jpg");
+  }
+
+  .cruise-item-six {
+    background-image: url("../img/cards-images/card-6-tablet@2x.jpg");
+  }
+
+  .cruise-item-seven {
+    background-image: url("../img/cards-images/card-7-tablet@2x.jpg");
+  }
+
+  .cruise-item-eight {
+    background-image: url("../img/cards-images/card-8-desktop@2x.jpg");
+  }
+
   .advantages {
     background-image: url("../img/bg-advantages-tablet@2x.jpg");
+  }
+
+  .booking-form {
+    background-image: url("../../img/bg-form-tablet@2x.jpg");
   }
 }
 
@@ -1778,6 +1920,10 @@ button,
     justify-content: flex-start;
     background-color: #f9fbfd;
     margin-left: 35px;
+  }
+
+  .header-close-menu-js {
+    margin-left: 0;
   }
 
   .header-close-menu-js {
@@ -1841,7 +1987,7 @@ button,
   }
 
   .main-screen {
-    min-height: 500px;
+    min-height: 506px;
     background-image: url("../img/bg-main-screen-mobile.jpg");
   }
 
@@ -1873,9 +2019,8 @@ button,
     flex-direction: column;
   }
 
-  .travels-wrapper img {
-    width: 290px;
-    height: 156px;
+  .travels-wrapper__image {
+    width: 100%;
   }
 
   .travels-description {
@@ -1936,6 +2081,49 @@ button,
   .cruise-list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    padding: 0 8px;
+  }
+
+  .cruise-item {
+    min-width: 270px;
+    padding: 29px 26px 34px;
+  }
+
+  .cruise-item-one {
+    background-image: url("../img/cards-images/card-1-desktop.jpg");
+  }
+
+  .cruise-item-two {
+    background-image: url("../img/cards-images/card-1-desktop.jpg");
+  }
+
+  .cruise-item-three {
+    background-image: url("../img/cards-images/card-3-desktop.jpg");
+  }
+
+  .cruise-item-four {
+    background-image: url("../img/cards-images/card-4-desktop.jpg");
+  }
+
+  .cruise-item-five {
+    background-image: url("../img/cards-images/card-5-desktop.jpg");
+  }
+
+  .cruise-item-six {
+    background-image: url("../img/cards-images/card-6-desktop.jpg");
+  }
+
+  .cruise-item-seven {
+    background-image: url("../img/cards-images/card-7-desktop.jpg");
+  }
+
+  .cruise-item-eight {
+    background-image: url("../img/cards-images/card-8-desktop.jpg");
+  }
+
+  .cruise-card h4 {
+    bottom: 16px;
+    left: 26px;
   }
 
   .footer {
@@ -1955,6 +2143,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    min-width: unset;
   }
 
   .footer-logo {
@@ -2023,12 +2212,16 @@ button,
     height: 16px;
   }
 
+  .booking-form {
+    background-image: url("../../img/bg-form-mobile.jpg");
+  }
+
   .form-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 65px 0 63px;
+    padding: 65px 0 67px;
     margin-left: -5px;
   }
 
@@ -2054,7 +2247,7 @@ button,
   }
 
   .form-block {
-    padding: 37px 33px 44px 28px;
+    padding: 37px 29px 44px 33px;
   }
 
   .form-block p {
@@ -2071,7 +2264,7 @@ button,
   }
 
   .form__checkbox {
-    margin-bottom: 26px;
+    margin-bottom: 29px;
   }
 
   .form__checkbox label {
@@ -2088,7 +2281,7 @@ button,
   }
 
   .contacts {
-    padding: 57px 0 81px;
+    padding: 57px 0 65px;
   }
 
   .contacts-wrapper {
@@ -2104,6 +2297,8 @@ button,
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
+    width: 290px;
+    height: 316px;
   }
 
   .map img {
@@ -2115,7 +2310,8 @@ button,
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
-    padding-top: 0;
+    margin-bottom: 16px;
+    padding: 0 5px;
   }
 }
 
@@ -2124,8 +2320,44 @@ button,
     background-image: url("../img/bg-main-screen-mobile@2x.jpg");
   }
 
+  .cruise-item-one {
+    background-image: url("../img/cards-images/card-1-desktop@2x.jpg");
+  }
+
+  .cruise-item-two {
+    background-image: url("../img/cards-images/card-1-desktop@2x.jpg");
+  }
+
+  .cruise-item-three {
+    background-image: url("../img/cards-images/card-3-desktop@2x.jpg");
+  }
+
+  .cruise-item-four {
+    background-image: url("../img/cards-images/card-4-desktop@2x.jpg");
+  }
+
+  .cruise-item-five {
+    background-image: url("../img/cards-images/card-5-desktop@2x.jpg");
+  }
+
+  .cruise-item-six {
+    background-image: url("../img/cards-images/card-6-desktop@2x.jpg");
+  }
+
+  .cruise-item-seven {
+    background-image: url("../img/cards-images/card-7-desktop@2x.jpg");
+  }
+
+  .cruise-item-eight {
+    background-image: url("../img/cards-images/card-8-mobile@2x.jpg");
+  }
+
   .advantages {
     background-image: url("../img/bg-advantages-mobile@2x.jpg");
+  }
+
+  .booking-form {
+    background-image: url("../../img/bg-form-mobile@2x.jpg");
   }
 }
 
@@ -2144,7 +2376,43 @@ button,
     background-image: url("../img/bg-main-screen-desktop@2x.jpg");
   }
 
+  .cruise-item-one {
+    background-image: url("../img/cards-images/card-1-desktop@2x.jpg");
+  }
+
+  .cruise-item-two {
+    background-image: url("../img/cards-images/card-1-desktop@2x.jpg");
+  }
+
+  .cruise-item-three {
+    background-image: url("../img/cards-images/card-3-desktop@2x.jpg");
+  }
+
+  .cruise-item-four {
+    background-image: url("../img/cards-images/card-4-desktop@2x.jpg");
+  }
+
+  .cruise-item-five {
+    background-image: url("../img/cards-images/card-5-desktop@2x.jpg");
+  }
+
+  .cruise-item-six {
+    background-image: url("../img/cards-images/card-6-desktop@2x.jpg");
+  }
+
+  .cruise-item-seven {
+    background-image: url("../img/cards-images/card-7-desktop@2x.jpg");
+  }
+
+  .cruise-item-eight {
+    background-image: url("../img/cards-images/card-8-desktop@2x.jpg");
+  }
+
   .advantages {
     background-image: url("../img/bg-advantages-desktop@2x.jpg");
+  }
+
+  .booking-form {
+    background-image: url("../../img/bg-form-desktop@2x.jpg");
   }
 }

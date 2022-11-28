@@ -2,7 +2,7 @@
   padding: 87px 87px 121px;
 
   @include vp-1023 {
-    padding: 87px 87px 100px;
+    padding: 87px 36px 100px;
   }
 
   @include vp-767 {
@@ -48,6 +48,7 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    padding: 0 8px;
   }
 }
 
@@ -56,19 +57,250 @@
   background-color: $color-tangaroa;
   min-height: 386px;
   position: relative;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: $ff-main-font;
+  color: $color-alice-blue;
+
+  @include vp-1023 {
+    padding: 29px 35px 34px;
+  }
+
+  @include vp-767 {
+    min-width: 270px;
+    padding: 29px 26px 34px;
+  }
 }
 
-.cruise-item:hover .cruise-card {
+.cruise-item-one {
+  background-image: url("../img/cards-images/card-1-desktop.jpg");
+
+  @media only screen and (min-resolution: 1.5),
+    only screen and (min-resolution: 144dpi) {
+    background-image: url("../img/cards-images/card-1-desktop@2x.jpg");
+  }
+
+  @include vp-1023 {
+    background-image: url('../img/cards-images/card-1-tablet.jpg');
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/cards-images/card-1-tablet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/cards-images/card-1-desktop.jpg");
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/cards-images/card-1-desktop@2x.jpg");
+    }
+  }
+}
+
+.cruise-item-two {
+  background-image: url("../img/cards-images/card-1-desktop.jpg");
+
+  @media only screen and (min-resolution: 1.5),
+    only screen and (min-resolution: 144dpi) {
+    background-image: url("../img/cards-images/card-1-desktop@2x.jpg");
+  }
+
+  @include vp-1023 {
+    background-image: url('../img/cards-images/card-1-tablet.jpg');
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/cards-images/card-1-tablet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/cards-images/card-1-desktop.jpg");
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/cards-images/card-1-desktop@2x.jpg");
+    }
+  }
+}
+
+.cruise-item-three {
+  background-image: url("../img/cards-images/card-3-desktop.jpg");
+
+  @media only screen and (min-resolution: 1.5),
+    only screen and (min-resolution: 144dpi) {
+    background-image: url("../img/cards-images/card-3-desktop@2x.jpg");
+  }
+
+  @include vp-1023 {
+    background-image: url('../img/cards-images/card-3-tablet.jpg');
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/cards-images/card-3-tablet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/cards-images/card-3-desktop.jpg");
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/cards-images/card-3-desktop@2x.jpg");
+    }
+  }
+}
+
+.cruise-item-four {
+  background-image: url("../img/cards-images/card-4-desktop.jpg");
+
+  @media only screen and (min-resolution: 1.5),
+    only screen and (min-resolution: 144dpi) {
+    background-image: url("../img/cards-images/card-4-desktop@2x.jpg");
+  }
+
+  @include vp-1023 {
+    background-image: url('../img/cards-images/card-4-tablet.jpg');
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/cards-images/card-4-tablet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/cards-images/card-4-desktop.jpg");
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/cards-images/card-4-desktop@2x.jpg");
+    }
+  }
+}
+
+.cruise-item-five {
+  background-image: url("../img/cards-images/card-5-desktop.jpg");
+
+  @media only screen and (min-resolution: 1.5),
+    only screen and (min-resolution: 144dpi) {
+    background-image: url("../img/cards-images/card-5-desktop@2x.jpg");
+  }
+
+  @include vp-1023 {
+    background-image: url('../img/cards-images/card-5-tablet.jpg');
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/cards-images/card-5-tablet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/cards-images/card-5-desktop.jpg");
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/cards-images/card-5-desktop@2x.jpg");
+    }
+  }
+}
+
+.cruise-item-six {
+  background-image: url("../img/cards-images/card-6-desktop.jpg");
+
+  @media only screen and (min-resolution: 1.5),
+    only screen and (min-resolution: 144dpi) {
+    background-image: url("../img/cards-images/card-6-desktop@2x.jpg");
+  }
+
+  @include vp-1023 {
+    background-image: url('../img/cards-images/card-6-tablet.jpg');
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/cards-images/card-6-tablet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/cards-images/card-6-desktop.jpg");
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/cards-images/card-6-desktop@2x.jpg");
+    }
+  }
+}
+
+.cruise-item-seven {
+  background-image: url("../img/cards-images/card-7-desktop.jpg");
+
+  @media only screen and (min-resolution: 1.5),
+    only screen and (min-resolution: 144dpi) {
+    background-image: url("../img/cards-images/card-7-desktop@2x.jpg");
+  }
+
+  @include vp-1023 {
+    background-image: url('../img/cards-images/card-7-tablet.jpg');
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/cards-images/card-7-tablet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/cards-images/card-7-desktop.jpg");
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/cards-images/card-7-desktop@2x.jpg");
+    }
+  }
+}
+
+.cruise-item-eight {
+  background-image: url("../img/cards-images/card-8-desktop.jpg");
+
+  @media only screen and (min-resolution: 1.5),
+    only screen and (min-resolution: 144dpi) {
+    background-image: url("../img/cards-images/card-8-desktop@2x.jpg");
+  }
+
+  @include vp-1023 {
+    background-image: url('../img/cards-images/card-8-tablet.jpg');
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/cards-images/card-8-desktop@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/cards-images/card-8-desktop.jpg");
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/cards-images/card-8-mobile@2x.jpg");
+    }
+  }
+}
+
+.cruise-item:hover h4 {
   display: none;
 }
 
-.cruise-item:hover .cruise-decription-wrapper {
+.cruise-item:hover .cruise-decription-wrapper,
+.cruise-item:hover .cruise-decription-wrapper h4 {
   display: block;
 }
 
-.cruise-item {
-  font-family: $ff-main-font;
-  color: $color-alice-blue;
+.cruise-item:hover {
+  background-color: $color-tangaroa;
+  background-image: unset;
 }
 
 .cruise-item h4,
@@ -84,21 +316,26 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  margin-bottom: 14px;
 }
 
 .cruise-card h4 {
   position: absolute;
-  bottom: 8px;
+  bottom: 23px;
   left: 29px;
+
+  @include vp-1023 {
+    bottom: 27px;
+    left: 35px;
+  }
+
+  @include vp-767 {
+    bottom: 16px;
+    left: 26px;
+  }
 }
 
-.cruise-card img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  right: 0;
+.cruise-decription-wrapper h4 {
+  margin-bottom: 14px;
 }
 
 .cruise-decription-wrapper {
@@ -109,7 +346,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 32px;
+  margin-bottom: 26px;
 }
 
 .cruise-decription h5 {
@@ -123,12 +360,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .cruise-button {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  padding-top: 9px;
+  padding-top: 10px;
 }

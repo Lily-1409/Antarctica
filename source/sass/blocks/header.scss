@@ -22,6 +22,12 @@
 
 .header-close-menu-js {
   @include vp-767 {
+    margin-left: 0;
+  }
+}
+
+.header-close-menu-js {
+  @include vp-767 {
     background-color: transparent;
   }
 }
