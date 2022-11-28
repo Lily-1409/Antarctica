@@ -46,8 +46,15 @@ window.addEventListener('DOMContentLoaded', () => {
       zoom: 14,
     });
 
-    const placemark = new window.ymaps.Placemark(new window.ymaps.GeoPoint(59.93885879814745, 30.325438403329063));
-    map.addOverlay(placemark);
+    // const placemark = new window.ymaps.Placemark(new window.ymaps.GeoPoint(59.93885879814745, 30.325438403329063));
+    // map.addOverlay(placemark);
+    const placemark = new window.ymaps.Placemark([59.93885879814745, 30.325438403329063], {}, {
+      iconLayout: 'default#image',
+      iconImageHref: '../img/svg/marker-card.svg',
+      iconImageSize: [20, 20],
+      iconImageOffset: [0, 0],
+    });
+    map.geoObjects.add(placemark);
   }
 
   window.ymaps.ready(init);

@@ -1239,6 +1239,10 @@ button,
   max-width: 290px;
 }
 
+.advantages-item span {
+  display: block;
+}
+
 .networks-list {
   margin: 0;
   padding: 0;
@@ -1302,7 +1306,7 @@ button,
   line-height: 60px;
   color: #011c40;
   margin-top: -5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .form-description p {
@@ -1766,6 +1770,10 @@ button,
     max-width: unset;
   }
 
+  .advantages-item span {
+    display: inline;
+  }
+
   .networks-list {
     margin-top: -3px;
     width: 103px;
@@ -1796,6 +1804,7 @@ button,
   .form-description h2 {
     font-size: 34px;
     line-height: 51px;
+    margin-bottom: 4px;
   }
 
   .form-description p {
@@ -2242,8 +2251,12 @@ button,
   .form-description p {
     font-size: 16px;
     line-height: 22px;
-    text-align: center;
+    padding-left: 5px;
     margin-bottom: -10px;
+  }
+
+  .form-description span {
+    display: block;
   }
 
   .form-block {
