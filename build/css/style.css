@@ -843,6 +843,12 @@ button,
   margin-top: -115px;
 }
 
+@supports (background-image: url("../img/bg-main-screen-desktop.webp")) {
+  .main-screen {
+    background-image: url("../img/bg-main-screen-desktop.webp");
+  }
+}
+
 .main-screen-wrapper {
   padding-top: 270px;
   padding-left: 167px;
@@ -1006,32 +1012,80 @@ button,
   background-image: url("../img/cards-images/card-1-desktop.jpg");
 }
 
+@supports (background-image: url("../img/cards-images/card-1-desktop.webp")) {
+  .cruise-item-one {
+    background-image: url("../img/cards-images/card-1-desktop.webp");
+  }
+}
+
 .cruise-item-two {
   background-image: url("../img/cards-images/card-1-desktop.jpg");
+}
+
+@supports (background-image: url("../img/cards-images/card-1-desktop.webp")) {
+  .cruise-item-two {
+    background-image: url("../img/cards-images/card-1-desktop.webp");
+  }
 }
 
 .cruise-item-three {
   background-image: url("../img/cards-images/card-3-desktop.jpg");
 }
 
+@supports (background-image: url("../img/cards-images/card-3-desktop.webp")) {
+  .cruise-item-three {
+    background-image: url("../img/cards-images/card-3-desktop.webp");
+  }
+}
+
 .cruise-item-four {
   background-image: url("../img/cards-images/card-4-desktop.jpg");
+}
+
+@supports (background-image: url("../img/cards-images/card-4-desktop.webp")) {
+  .cruise-item-four {
+    background-image: url("../img/cards-images/card-4-desktop.webp");
+  }
 }
 
 .cruise-item-five {
   background-image: url("../img/cards-images/card-5-desktop.jpg");
 }
 
+@supports (background-image: url("../img/cards-images/card-5-desktop.webp")) {
+  .cruise-item-five {
+    background-image: url("../img/cards-images/card-5-desktop.webp");
+  }
+}
+
 .cruise-item-six {
   background-image: url("../img/cards-images/card-6-desktop.jpg");
+}
+
+@supports (background-image: url("../img/cards-images/card-6-desktop.webp")) {
+  .cruise-item-six {
+    background-image: url("../img/cards-images/card-6-desktop.webp");
+  }
 }
 
 .cruise-item-seven {
   background-image: url("../img/cards-images/card-7-desktop.jpg");
 }
 
+@supports (background-image: url("../img/cards-images/card-7-desktop.webp")) {
+  .cruise-item-seven {
+    background-image: url("../img/cards-images/card-7-desktop.webp");
+  }
+}
+
 .cruise-item-eight {
   background-image: url("../img/cards-images/card-8-desktop.jpg");
+}
+
+@supports (background-image: url("../img/cards-images/card-8-desktop.webp")) {
+  .cruise-item-eight {
+    background-image: url("../img/cards-images/card-8-desktop.webp");
+  }
 }
 
 .cruise-item:hover h4 {
@@ -1176,6 +1230,12 @@ button,
   background-repeat: no-repeat;
 }
 
+@supports (background-image: url("../img/bg-advantages-desktop.webp")) {
+  .advantages {
+    background-image: url("../img/bg-advantages-desktop.webp");
+  }
+}
+
 .advantages h3 {
   margin: 0;
   padding: 0;
@@ -1266,10 +1326,16 @@ button,
 }
 
 .booking-form {
-  background-image: url("../../img/bg-form-desktop.jpg");
+  background-image: url("../img/bg-form-desktop.jpg");
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
+}
+
+@supports (background-image: url("../img/bg-form-desktop.webp")) {
+  .booking-form {
+    background-image: url("../img/bg-form-desktop.webp");
+  }
 }
 
 .form-wrapper {
@@ -1595,6 +1661,12 @@ button,
     min-height: 666px;
   }
 
+@supports (background-image: url("../img/bg-main-screen-tablet.webp")) {
+    .main-screen {
+      background-image: url("../img/bg-main-screen-tablet.webp");
+    }
+}
+
   .main-screen-wrapper {
     padding-top: 296px;
     padding-left: 20px;
@@ -1672,33 +1744,81 @@ button,
     background-image: url("../img/cards-images/card-1-tablet.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-1-tablet@2x.webp")) {
+    .cruise-item-one {
+      background-image: url("../img/cards-images/card-1-tablet@2x.webp");
+    }
+}
+
   .cruise-item-two {
     background-image: url("../img/cards-images/card-1-tablet.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-1-tablet@2x.webp")) {
+    .cruise-item-two {
+      background-image: url("../img/cards-images/card-1-tablet@2x.webp");
+    }
+}
 
   .cruise-item-three {
     background-image: url("../img/cards-images/card-3-tablet.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-3-tablet.webp")) {
+    .cruise-item-three {
+      background-image: url("../img/cards-images/card-3-tablet.webp");
+    }
+}
+
   .cruise-item-four {
     background-image: url("../img/cards-images/card-4-tablet.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-4-tablet.webp")) {
+    .cruise-item-four {
+      background-image: url("../img/cards-images/card-4-tablet.webp");
+    }
+}
 
   .cruise-item-five {
     background-image: url("../img/cards-images/card-5-tablet.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-5-tablet.webp")) {
+    .cruise-item-five {
+      background-image: url("../img/cards-images/card-5-tablet.webp");
+    }
+}
+
   .cruise-item-six {
     background-image: url("../img/cards-images/card-6-tablet.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-6-tablet.webp")) {
+    .cruise-item-six {
+      background-image: url("../img/cards-images/card-6-tablet.webp");
+    }
+}
 
   .cruise-item-seven {
     background-image: url("../img/cards-images/card-7-tablet.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-7-tablet.webp")) {
+    .cruise-item-seven {
+      background-image: url("../img/cards-images/card-7-tablet.webp");
+    }
+}
+
   .cruise-item-eight {
     background-image: url("../img/cards-images/card-8-tablet.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-8-tablet.webp")) {
+    .cruise-item-eight {
+      background-image: url("../img/cards-images/card-8-tablet.webp");
+    }
+}
 
   .cruise-card h4 {
     bottom: 27px;
@@ -1739,6 +1859,12 @@ button,
     padding: 90px 0 100px;
     background-image: url("../img/bg-advantages-tablet.jpg");
   }
+
+@supports (background-image: url("../img/bg-advantages-tablet.webp")) {
+    .advantages {
+      background-image: url("../img/bg-advantages-tablet.webp");
+    }
+}
 
   .advantages h3 {
     font-size: 26px;
@@ -1785,8 +1911,14 @@ button,
   }
 
   .booking-form {
-    background-image: url("../../img/bg-form-tablet.jpg");
+    background-image: url("../img/bg-form-tablet.jpg");
   }
+
+@supports (background-image: url("../img/bg-form-tablet.webp")) {
+    .booking-form {
+      background-image: url("../img/bg-form-tablet.webp");
+    }
+}
 
   .form-wrapper {
     -webkit-box-orient: vertical;
@@ -1854,45 +1986,111 @@ button,
     background-image: url("../img/bg-main-screen-tablet@2x.jpg");
   }
 
+@supports (background-image: url("../img/bg-main-screen-tablet@2x.webp")) {
+    .main-screen {
+      background-image: url("../img/bg-main-screen-tablet@2x.webp");
+    }
+}
+
   .cruise-item-one {
     background-image: url("../img/cards-images/card-1-tablet@2x.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-1-tablet@2x.webp")) {
+    .cruise-item-one {
+      background-image: url("../img/cards-images/card-1-tablet@2x.webp");
+    }
+}
 
   .cruise-item-two {
     background-image: url("../img/cards-images/card-1-tablet@2x.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-1-tablet@2x.webp")) {
+    .cruise-item-two {
+      background-image: url("../img/cards-images/card-1-tablet@2x.webp");
+    }
+}
+
   .cruise-item-three {
     background-image: url("../img/cards-images/card-3-tablet@2x.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-3-tablet@2x.webp")) {
+    .cruise-item-three {
+      background-image: url("../img/cards-images/card-3-tablet@2x.webp");
+    }
+}
 
   .cruise-item-four {
     background-image: url("../img/cards-images/card-4-tablet@2x.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-4-tablet@2x.webp")) {
+    .cruise-item-four {
+      background-image: url("../img/cards-images/card-4-tablet@2x.webp");
+    }
+}
+
   .cruise-item-five {
     background-image: url("../img/cards-images/card-5-tablet@2x.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-5-tablet@2x.webp")) {
+    .cruise-item-five {
+      background-image: url("../img/cards-images/card-5-tablet@2x.webp");
+    }
+}
 
   .cruise-item-six {
     background-image: url("../img/cards-images/card-6-tablet@2x.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-6-tablet@2x.webp")) {
+    .cruise-item-six {
+      background-image: url("../img/cards-images/card-6-tablet@2x.webp");
+    }
+}
+
   .cruise-item-seven {
     background-image: url("../img/cards-images/card-7-tablet@2x.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-7-tablet@2x.webp")) {
+    .cruise-item-seven {
+      background-image: url("../img/cards-images/card-7-tablet@2x.webp");
+    }
+}
+
   .cruise-item-eight {
-    background-image: url("../img/cards-images/card-8-desktop@2x.jpg");
+    background-image: url("../img/cards-images/card-8-tablet@2x.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-8-tablet@2x.webp")) {
+    .cruise-item-eight {
+      background-image: url("../img/cards-images/card-8-tablet@2x.webp");
+    }
+}
 
   .advantages {
     background-image: url("../img/bg-advantages-tablet@2x.jpg");
   }
 
+@supports (background-image: url("../img/bg-advantages-tablet@2x.webp")) {
+    .advantages {
+      background-image: url("../img/bg-advantages-tablet@2x.webp");
+    }
+}
+
   .booking-form {
     background-image: url("../../img/bg-form-tablet@2x.jpg");
   }
+
+@supports (background-image: url("../../img/bg-form-tablet@2x.webp")) {
+    .booking-form {
+      background-image: url("../../img/bg-form-tablet@2x.webp");
+    }
+}
 }
 
 @media (max-width: 767px) {
@@ -2000,6 +2198,12 @@ button,
     background-image: url("../img/bg-main-screen-mobile.jpg");
   }
 
+@supports (background-image: url("../img/bg-main-screen-mobile.webp")) {
+    .main-screen {
+      background-image: url("../img/bg-main-screen-mobile.webp");
+    }
+}
+
   .main-screen-wrapper {
     padding-top: 182px;
     padding-left: 0;
@@ -2102,33 +2306,81 @@ button,
     background-image: url("../img/cards-images/card-1-desktop.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-1-desktop@2x.webp")) {
+    .cruise-item-one {
+      background-image: url("../img/cards-images/card-1-desktop@2x.webp");
+    }
+}
+
   .cruise-item-two {
     background-image: url("../img/cards-images/card-1-desktop.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-1-desktop@2x.webp")) {
+    .cruise-item-two {
+      background-image: url("../img/cards-images/card-1-desktop@2x.webp");
+    }
+}
 
   .cruise-item-three {
     background-image: url("../img/cards-images/card-3-desktop.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-3-desktop.webp")) {
+    .cruise-item-three {
+      background-image: url("../img/cards-images/card-3-desktop.webp");
+    }
+}
+
   .cruise-item-four {
     background-image: url("../img/cards-images/card-4-desktop.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-4-desktop.webp")) {
+    .cruise-item-four {
+      background-image: url("../img/cards-images/card-4-desktop.webp");
+    }
+}
 
   .cruise-item-five {
     background-image: url("../img/cards-images/card-5-desktop.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-5-desktop.webp")) {
+    .cruise-item-five {
+      background-image: url("../img/cards-images/card-5-desktop.webp");
+    }
+}
+
   .cruise-item-six {
     background-image: url("../img/cards-images/card-6-desktop.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-6-desktop.webp")) {
+    .cruise-item-six {
+      background-image: url("../img/cards-images/card-6-desktop.webp");
+    }
+}
 
   .cruise-item-seven {
     background-image: url("../img/cards-images/card-7-desktop.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-7-desktop.webp")) {
+    .cruise-item-seven {
+      background-image: url("../img/cards-images/card-7-desktop.webp");
+    }
+}
+
   .cruise-item-eight {
     background-image: url("../img/cards-images/card-8-desktop.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-8-desktop.webp")) {
+    .cruise-item-eight {
+      background-image: url("../img/cards-images/card-8-desktop.webp");
+    }
+}
 
   .cruise-card h4 {
     bottom: 16px;
@@ -2186,6 +2438,12 @@ button,
     background-image: url("../img/bg-advantages-mobile.jpg");
   }
 
+@supports (background-image: url("../img/bg-advantages-mobile.webp")) {
+    .advantages {
+      background-image: url("../img/bg-advantages-mobile.webp");
+    }
+}
+
   .advantages h3 {
     font-size: 24px;
     line-height: 36px;
@@ -2224,6 +2482,12 @@ button,
   .booking-form {
     background-image: url("../../img/bg-form-mobile.jpg");
   }
+
+@supports (background-image: url("../../img/bg-form-mobile.webp")) {
+    .booking-form {
+      background-image: url("../../img/bg-form-mobile.webp");
+    }
+}
 
   .form-wrapper {
     -webkit-box-orient: vertical;
@@ -2333,45 +2597,111 @@ button,
     background-image: url("../img/bg-main-screen-mobile@2x.jpg");
   }
 
+@supports (background-image: url("../img/bg-main-screen-mobile@2x.webp")) {
+    .main-screen {
+      background-image: url("../img/bg-main-screen-mobile@2x.webp");
+    }
+}
+
   .cruise-item-one {
     background-image: url("../img/cards-images/card-1-desktop@2x.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-1-desktop@2x.webp")) {
+    .cruise-item-one {
+      background-image: url("../img/cards-images/card-1-desktop@2x.webp");
+    }
+}
 
   .cruise-item-two {
     background-image: url("../img/cards-images/card-1-desktop@2x.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-1-desktop@2x.webp")) {
+    .cruise-item-two {
+      background-image: url("../img/cards-images/card-1-desktop@2x.webp");
+    }
+}
+
   .cruise-item-three {
     background-image: url("../img/cards-images/card-3-desktop@2x.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-3-desktop@2x.webp")) {
+    .cruise-item-three {
+      background-image: url("../img/cards-images/card-3-desktop@2x.webp");
+    }
+}
 
   .cruise-item-four {
     background-image: url("../img/cards-images/card-4-desktop@2x.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-4-desktop@2x.webp")) {
+    .cruise-item-four {
+      background-image: url("../img/cards-images/card-4-desktop@2x.webp");
+    }
+}
+
   .cruise-item-five {
     background-image: url("../img/cards-images/card-5-desktop@2x.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-5-desktop@2x.webp")) {
+    .cruise-item-five {
+      background-image: url("../img/cards-images/card-5-desktop@2x.webp");
+    }
+}
 
   .cruise-item-six {
     background-image: url("../img/cards-images/card-6-desktop@2x.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-6-desktop@2x.webp")) {
+    .cruise-item-six {
+      background-image: url("../img/cards-images/card-6-desktop@2x.webp");
+    }
+}
+
   .cruise-item-seven {
     background-image: url("../img/cards-images/card-7-desktop@2x.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-7-desktop@2x.webp")) {
+    .cruise-item-seven {
+      background-image: url("../img/cards-images/card-7-desktop@2x.webp");
+    }
+}
+
   .cruise-item-eight {
-    background-image: url("../img/cards-images/card-8-mobile@2x.jpg");
+    background-image: url("../img/cards-images/card-8-desktop@2x.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-8-desktop@2x.webp")) {
+    .cruise-item-eight {
+      background-image: url("../img/cards-images/card-8-desktop@2x.webp");
+    }
+}
 
   .advantages {
     background-image: url("../img/bg-advantages-mobile@2x.jpg");
   }
 
+@supports (background-image: url("../img/bg-advantages-mobile@2x.webp")) {
+    .advantages {
+      background-image: url("../img/bg-advantages-mobile@2x.webp");
+    }
+}
+
   .booking-form {
     background-image: url("../../img/bg-form-mobile@2x.jpg");
   }
+
+@supports (background-image: url("../../img/bg-form-mobile@2x.webp")) {
+    .booking-form {
+      background-image: url("../../img/bg-form-mobile@2x.webp");
+    }
+}
 }
 
 @media (hover: hover) {
@@ -2389,43 +2719,109 @@ button,
     background-image: url("../img/bg-main-screen-desktop@2x.jpg");
   }
 
+@supports (background-image: url("../img/bg-main-screen-desktop@2x.webp")) {
+    .main-screen {
+      background-image: url("../img/bg-main-screen-desktop@2x.webp");
+    }
+}
+
   .cruise-item-one {
     background-image: url("../img/cards-images/card-1-desktop@2x.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-1-desktop@2x.webp")) {
+    .cruise-item-one {
+      background-image: url("../img/cards-images/card-1-desktop@2x.webp");
+    }
+}
 
   .cruise-item-two {
     background-image: url("../img/cards-images/card-1-desktop@2x.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-1-desktop@2x.webp")) {
+    .cruise-item-two {
+      background-image: url("../img/cards-images/card-1-desktop@2x.webp");
+    }
+}
+
   .cruise-item-three {
     background-image: url("../img/cards-images/card-3-desktop@2x.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-3-desktop@2x.webp")) {
+    .cruise-item-three {
+      background-image: url("../img/cards-images/card-3-desktop@2x.webp");
+    }
+}
 
   .cruise-item-four {
     background-image: url("../img/cards-images/card-4-desktop@2x.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-4-desktop@2x.webp")) {
+    .cruise-item-four {
+      background-image: url("../img/cards-images/card-4-desktop@2x.webp");
+    }
+}
+
   .cruise-item-five {
     background-image: url("../img/cards-images/card-5-desktop@2x.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-5-desktop@2x.webp")) {
+    .cruise-item-five {
+      background-image: url("../img/cards-images/card-5-desktop@2x.webp");
+    }
+}
 
   .cruise-item-six {
     background-image: url("../img/cards-images/card-6-desktop@2x.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-6-desktop@2x.webp")) {
+    .cruise-item-six {
+      background-image: url("../img/cards-images/card-6-desktop@2x.webp");
+    }
+}
+
   .cruise-item-seven {
     background-image: url("../img/cards-images/card-7-desktop@2x.jpg");
   }
+
+@supports (background-image: url("../img/cards-images/card-7-desktop@2x.webp")) {
+    .cruise-item-seven {
+      background-image: url("../img/cards-images/card-7-desktop@2x.webp");
+    }
+}
 
   .cruise-item-eight {
     background-image: url("../img/cards-images/card-8-desktop@2x.jpg");
   }
 
+@supports (background-image: url("../img/cards-images/card-8-desktop@2x.webp")) {
+    .cruise-item-eight {
+      background-image: url("../img/cards-images/card-8-desktop@2x.webp");
+    }
+}
+
   .advantages {
     background-image: url("../img/bg-advantages-desktop@2x.jpg");
   }
 
+@supports (background-image: url("../img/bg-advantages-desktop@2x.webp")) {
+    .advantages {
+      background-image: url("../img/bg-advantages-desktop@2x.webp");
+    }
+}
+
   .booking-form {
-    background-image: url("../../img/bg-form-desktop@2x.jpg");
+    background-image: url("../img/bg-form-desktop@2x.jpg");
   }
+
+@supports (background-image: url("../img/bg-form-desktop@2x.webp")) {
+    .booking-form {
+      background-image: url("../img/bg-form-desktop@2x.webp");
+    }
+}
 }

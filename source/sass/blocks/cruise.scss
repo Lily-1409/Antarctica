@@ -76,26 +76,50 @@
 .cruise-item-one {
   background-image: url("../img/cards-images/card-1-desktop.jpg");
 
+  @supports (background-image: url("../img/cards-images/card-1-desktop.webp")) {
+    background-image: url("../img/cards-images/card-1-desktop.webp");
+  }
+
   @media only screen and (min-resolution: 1.5),
     only screen and (min-resolution: 144dpi) {
     background-image: url("../img/cards-images/card-1-desktop@2x.jpg");
+
+    @supports (background-image: url("../img/cards-images/card-1-desktop@2x.webp")) {
+      background-image: url("../img/cards-images/card-1-desktop@2x.webp");
+    }
   }
 
   @include vp-1023 {
-    background-image: url('../img/cards-images/card-1-tablet.jpg');
+    background-image: url("../img/cards-images/card-1-tablet.jpg");
+
+    @supports (background-image: url("../img/cards-images/card-1-tablet@2x.webp")) {
+      background-image: url("../img/cards-images/card-1-tablet@2x.webp");
+    }
 
     @media only screen and (min-resolution: 1.5),
       only screen and (min-resolution: 144dpi) {
       background-image: url("../img/cards-images/card-1-tablet@2x.jpg");
+
+      @supports (background-image: url("../img/cards-images/card-1-tablet@2x.webp")) {
+        background-image: url("../img/cards-images/card-1-tablet@2x.webp");
+      }
     }
   }
 
   @include vp-767 {
     background-image: url("../img/cards-images/card-1-desktop.jpg");
 
+    @supports (background-image: url("../img/cards-images/card-1-desktop@2x.webp")) {
+      background-image: url("../img/cards-images/card-1-desktop@2x.webp");
+    }
+
     @media only screen and (min-resolution: 1.5),
       only screen and (min-resolution: 144dpi) {
       background-image: url("../img/cards-images/card-1-desktop@2x.jpg");
+
+      @supports (background-image: url("../img/cards-images/card-1-desktop@2x.webp")) {
+        background-image: url("../img/cards-images/card-1-desktop@2x.webp");
+      }
     }
   }
 }
@@ -103,26 +127,50 @@
 .cruise-item-two {
   background-image: url("../img/cards-images/card-1-desktop.jpg");
 
+  @supports (background-image: url("../img/cards-images/card-1-desktop.webp")) {
+    background-image: url("../img/cards-images/card-1-desktop.webp");
+  }
+
   @media only screen and (min-resolution: 1.5),
     only screen and (min-resolution: 144dpi) {
     background-image: url("../img/cards-images/card-1-desktop@2x.jpg");
+
+    @supports (background-image: url("../img/cards-images/card-1-desktop@2x.webp")) {
+      background-image: url("../img/cards-images/card-1-desktop@2x.webp");
+    }
   }
 
   @include vp-1023 {
-    background-image: url('../img/cards-images/card-1-tablet.jpg');
+    background-image: url("../img/cards-images/card-1-tablet.jpg");
+
+    @supports (background-image: url("../img/cards-images/card-1-tablet@2x.webp")) {
+      background-image: url("../img/cards-images/card-1-tablet@2x.webp");
+    }
 
     @media only screen and (min-resolution: 1.5),
       only screen and (min-resolution: 144dpi) {
       background-image: url("../img/cards-images/card-1-tablet@2x.jpg");
+
+      @supports (background-image: url("../img/cards-images/card-1-tablet@2x.webp")) {
+        background-image: url("../img/cards-images/card-1-tablet@2x.webp");
+      }
     }
   }
 
   @include vp-767 {
     background-image: url("../img/cards-images/card-1-desktop.jpg");
 
+    @supports (background-image: url("../img/cards-images/card-1-desktop@2x.webp")) {
+      background-image: url("../img/cards-images/card-1-desktop@2x.webp");
+    }
+
     @media only screen and (min-resolution: 1.5),
       only screen and (min-resolution: 144dpi) {
       background-image: url("../img/cards-images/card-1-desktop@2x.jpg");
+
+      @supports (background-image: url("../img/cards-images/card-1-desktop@2x.webp")) {
+        background-image: url("../img/cards-images/card-1-desktop@2x.webp");
+      }
     }
   }
 }
@@ -130,26 +178,50 @@
 .cruise-item-three {
   background-image: url("../img/cards-images/card-3-desktop.jpg");
 
+  @supports (background-image: url("../img/cards-images/card-3-desktop.webp")) {
+    background-image: url("../img/cards-images/card-3-desktop.webp");
+  }
+
   @media only screen and (min-resolution: 1.5),
     only screen and (min-resolution: 144dpi) {
     background-image: url("../img/cards-images/card-3-desktop@2x.jpg");
+
+    @supports (background-image: url("../img/cards-images/card-3-desktop@2x.webp")) {
+      background-image: url("../img/cards-images/card-3-desktop@2x.webp");
+    }
   }
 
   @include vp-1023 {
-    background-image: url('../img/cards-images/card-3-tablet.jpg');
+    background-image: url("../img/cards-images/card-3-tablet.jpg");
+
+    @supports (background-image: url("../img/cards-images/card-3-tablet.webp")) {
+      background-image: url("../img/cards-images/card-3-tablet.webp");
+    }
 
     @media only screen and (min-resolution: 1.5),
       only screen and (min-resolution: 144dpi) {
       background-image: url("../img/cards-images/card-3-tablet@2x.jpg");
+
+      @supports (background-image: url("../img/cards-images/card-3-tablet@2x.webp")) {
+        background-image: url("../img/cards-images/card-3-tablet@2x.webp");
+      }
     }
   }
 
   @include vp-767 {
     background-image: url("../img/cards-images/card-3-desktop.jpg");
 
+    @supports (background-image: url("../img/cards-images/card-3-desktop.webp")) {
+      background-image: url("../img/cards-images/card-3-desktop.webp");
+    }
+
     @media only screen and (min-resolution: 1.5),
       only screen and (min-resolution: 144dpi) {
       background-image: url("../img/cards-images/card-3-desktop@2x.jpg");
+
+      @supports (background-image: url("../img/cards-images/card-3-desktop@2x.webp")) {
+        background-image: url("../img/cards-images/card-3-desktop@2x.webp");
+      }
     }
   }
 }
@@ -157,26 +229,50 @@
 .cruise-item-four {
   background-image: url("../img/cards-images/card-4-desktop.jpg");
 
+  @supports (background-image: url("../img/cards-images/card-4-desktop.webp")) {
+    background-image: url("../img/cards-images/card-4-desktop.webp");
+  }
+
   @media only screen and (min-resolution: 1.5),
     only screen and (min-resolution: 144dpi) {
     background-image: url("../img/cards-images/card-4-desktop@2x.jpg");
+
+    @supports (background-image: url("../img/cards-images/card-4-desktop@2x.webp")) {
+      background-image: url("../img/cards-images/card-4-desktop@2x.webp");
+    }
   }
 
   @include vp-1023 {
-    background-image: url('../img/cards-images/card-4-tablet.jpg');
+    background-image: url("../img/cards-images/card-4-tablet.jpg");
+
+    @supports (background-image: url("../img/cards-images/card-4-tablet.webp")) {
+      background-image: url("../img/cards-images/card-4-tablet.webp");
+    }
 
     @media only screen and (min-resolution: 1.5),
       only screen and (min-resolution: 144dpi) {
       background-image: url("../img/cards-images/card-4-tablet@2x.jpg");
+
+      @supports (background-image: url("../img/cards-images/card-4-tablet@2x.webp")) {
+        background-image: url("../img/cards-images/card-4-tablet@2x.webp");
+      }
     }
   }
 
   @include vp-767 {
     background-image: url("../img/cards-images/card-4-desktop.jpg");
 
+    @supports (background-image: url("../img/cards-images/card-4-desktop.webp")) {
+      background-image: url("../img/cards-images/card-4-desktop.webp");
+    }
+
     @media only screen and (min-resolution: 1.5),
       only screen and (min-resolution: 144dpi) {
       background-image: url("../img/cards-images/card-4-desktop@2x.jpg");
+
+      @supports (background-image: url("../img/cards-images/card-4-desktop@2x.webp")) {
+        background-image: url("../img/cards-images/card-4-desktop@2x.webp");
+      }
     }
   }
 }
@@ -184,26 +280,50 @@
 .cruise-item-five {
   background-image: url("../img/cards-images/card-5-desktop.jpg");
 
+  @supports (background-image: url("../img/cards-images/card-5-desktop.webp")) {
+    background-image: url("../img/cards-images/card-5-desktop.webp");
+  }
+
   @media only screen and (min-resolution: 1.5),
     only screen and (min-resolution: 144dpi) {
     background-image: url("../img/cards-images/card-5-desktop@2x.jpg");
+
+    @supports (background-image: url("../img/cards-images/card-5-desktop@2x.webp")) {
+      background-image: url("../img/cards-images/card-5-desktop@2x.webp");
+    }
   }
 
   @include vp-1023 {
-    background-image: url('../img/cards-images/card-5-tablet.jpg');
+    background-image: url("../img/cards-images/card-5-tablet.jpg");
+
+    @supports (background-image: url("../img/cards-images/card-5-tablet.webp")) {
+      background-image: url("../img/cards-images/card-5-tablet.webp");
+    }
 
     @media only screen and (min-resolution: 1.5),
       only screen and (min-resolution: 144dpi) {
       background-image: url("../img/cards-images/card-5-tablet@2x.jpg");
+
+      @supports (background-image: url("../img/cards-images/card-5-tablet@2x.webp")) {
+        background-image: url("../img/cards-images/card-5-tablet@2x.webp");
+      }
     }
   }
 
   @include vp-767 {
     background-image: url("../img/cards-images/card-5-desktop.jpg");
 
+    @supports (background-image: url("../img/cards-images/card-5-desktop.webp")) {
+      background-image: url("../img/cards-images/card-5-desktop.webp");
+    }
+
     @media only screen and (min-resolution: 1.5),
       only screen and (min-resolution: 144dpi) {
       background-image: url("../img/cards-images/card-5-desktop@2x.jpg");
+
+      @supports (background-image: url("../img/cards-images/card-5-desktop@2x.webp")) {
+        background-image: url("../img/cards-images/card-5-desktop@2x.webp");
+      }
     }
   }
 }
@@ -211,26 +331,50 @@
 .cruise-item-six {
   background-image: url("../img/cards-images/card-6-desktop.jpg");
 
+  @supports (background-image: url("../img/cards-images/card-6-desktop.webp")) {
+    background-image: url("../img/cards-images/card-6-desktop.webp");
+  }
+
   @media only screen and (min-resolution: 1.5),
     only screen and (min-resolution: 144dpi) {
     background-image: url("../img/cards-images/card-6-desktop@2x.jpg");
+
+    @supports (background-image: url("../img/cards-images/card-6-desktop@2x.webp")) {
+      background-image: url("../img/cards-images/card-6-desktop@2x.webp");
+    }
   }
 
   @include vp-1023 {
-    background-image: url('../img/cards-images/card-6-tablet.jpg');
+    background-image: url("../img/cards-images/card-6-tablet.jpg");
+
+    @supports (background-image: url("../img/cards-images/card-6-tablet.webp")) {
+      background-image: url("../img/cards-images/card-6-tablet.webp");
+    }
 
     @media only screen and (min-resolution: 1.5),
       only screen and (min-resolution: 144dpi) {
       background-image: url("../img/cards-images/card-6-tablet@2x.jpg");
+
+      @supports (background-image: url("../img/cards-images/card-6-tablet@2x.webp")) {
+        background-image: url("../img/cards-images/card-6-tablet@2x.webp");
+      }
     }
   }
 
   @include vp-767 {
     background-image: url("../img/cards-images/card-6-desktop.jpg");
 
+    @supports (background-image: url("../img/cards-images/card-6-desktop.webp")) {
+      background-image: url("../img/cards-images/card-6-desktop.webp");
+    }
+
     @media only screen and (min-resolution: 1.5),
       only screen and (min-resolution: 144dpi) {
       background-image: url("../img/cards-images/card-6-desktop@2x.jpg");
+
+      @supports (background-image: url("../img/cards-images/card-6-desktop@2x.webp")) {
+        background-image: url("../img/cards-images/card-6-desktop@2x.webp");
+      }
     }
   }
 }
@@ -238,26 +382,50 @@
 .cruise-item-seven {
   background-image: url("../img/cards-images/card-7-desktop.jpg");
 
+  @supports (background-image: url("../img/cards-images/card-7-desktop.webp")) {
+    background-image: url("../img/cards-images/card-7-desktop.webp");
+  }
+
   @media only screen and (min-resolution: 1.5),
     only screen and (min-resolution: 144dpi) {
     background-image: url("../img/cards-images/card-7-desktop@2x.jpg");
+
+    @supports (background-image: url("../img/cards-images/card-7-desktop@2x.webp")) {
+      background-image: url("../img/cards-images/card-7-desktop@2x.webp");
+    }
   }
 
   @include vp-1023 {
-    background-image: url('../img/cards-images/card-7-tablet.jpg');
+    background-image: url("../img/cards-images/card-7-tablet.jpg");
+
+    @supports (background-image: url("../img/cards-images/card-7-tablet.webp")) {
+      background-image: url("../img/cards-images/card-7-tablet.webp");
+    }
 
     @media only screen and (min-resolution: 1.5),
       only screen and (min-resolution: 144dpi) {
       background-image: url("../img/cards-images/card-7-tablet@2x.jpg");
+
+      @supports (background-image: url("../img/cards-images/card-7-tablet@2x.webp")) {
+        background-image: url("../img/cards-images/card-7-tablet@2x.webp");
+      }
     }
   }
 
   @include vp-767 {
     background-image: url("../img/cards-images/card-7-desktop.jpg");
 
+    @supports (background-image: url("../img/cards-images/card-7-desktop.webp")) {
+      background-image: url("../img/cards-images/card-7-desktop.webp");
+    }
+
     @media only screen and (min-resolution: 1.5),
       only screen and (min-resolution: 144dpi) {
       background-image: url("../img/cards-images/card-7-desktop@2x.jpg");
+
+      @supports (background-image: url("../img/cards-images/card-7-desktop@2x.webp")) {
+        background-image: url("../img/cards-images/card-7-desktop@2x.webp");
+      }
     }
   }
 }
@@ -265,26 +433,50 @@
 .cruise-item-eight {
   background-image: url("../img/cards-images/card-8-desktop.jpg");
 
+  @supports (background-image: url("../img/cards-images/card-8-desktop.webp")) {
+    background-image: url("../img/cards-images/card-8-desktop.webp");
+  }
+
   @media only screen and (min-resolution: 1.5),
     only screen and (min-resolution: 144dpi) {
     background-image: url("../img/cards-images/card-8-desktop@2x.jpg");
+
+    @supports (background-image: url("../img/cards-images/card-8-desktop@2x.webp")) {
+      background-image: url("../img/cards-images/card-8-desktop@2x.webp");
+    }
   }
 
   @include vp-1023 {
-    background-image: url('../img/cards-images/card-8-tablet.jpg');
+    background-image: url("../img/cards-images/card-8-tablet.jpg");
+
+    @supports (background-image: url("../img/cards-images/card-8-tablet.webp")) {
+      background-image: url("../img/cards-images/card-8-tablet.webp");
+    }
 
     @media only screen and (min-resolution: 1.5),
       only screen and (min-resolution: 144dpi) {
-      background-image: url("../img/cards-images/card-8-desktop@2x.jpg");
+      background-image: url("../img/cards-images/card-8-tablet@2x.jpg");
+
+      @supports (background-image: url("../img/cards-images/card-8-tablet@2x.webp")) {
+        background-image: url("../img/cards-images/card-8-tablet@2x.webp");
+      }
     }
   }
 
   @include vp-767 {
     background-image: url("../img/cards-images/card-8-desktop.jpg");
 
+    @supports (background-image: url("../img/cards-images/card-8-desktop.webp")) {
+      background-image: url("../img/cards-images/card-8-desktop.webp");
+    }
+
     @media only screen and (min-resolution: 1.5),
       only screen and (min-resolution: 144dpi) {
-      background-image: url("../img/cards-images/card-8-mobile@2x.jpg");
+      background-image: url("../img/cards-images/card-8-desktop@2x.jpg");
+
+      @supports (background-image: url("../img/cards-images/card-8-desktop@2x.webp")) {
+        background-image: url("../img/cards-images/card-8-desktop@2x.webp");
+      }
     }
   }
 }

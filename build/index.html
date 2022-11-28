@@ -72,7 +72,10 @@
                 <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
               </div>
               <div class="travels-wrapper__image">
-                <img src="./img/travels-desktop.jpg" srcset="./img/travels-desktop@2x.jpg 2x" width="560" height="301" alt="Изображение пингвина">
+                <picture>
+                  <source type="image/webp" srcset="./img/travels-desktop.webp 1x, ./img/travels-desktop@2x.webp 2x">
+                  <img src="./img/travels-desktop.jpg" srcset="./img/travels-desktop@2x.jpg 2x" width="560" height="301" alt="Изображение пингвина">
+                </picture>
               </div>
             </div>
           </div>
@@ -378,7 +381,10 @@
             <div class="contacts-wrapper">
               <div class="map" id="map">
                 <div class="map-wrapper">
-                  <img src="./img/map-desktop.jpg" srcset="./img/map-desktop@2x.jpg" width="560" height="306" alt="картинка карты">
+                  <picture>
+                    <source type="image/webp" srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x">
+                    <img src="./img/map-desktop.jpg" srcset="./img/map-desktop@2x.jpg" width="560" height="306" alt="картинка карты">
+                  </picture>
                 </div>
               </div>
               <div class="contacts-information">
@@ -464,7 +470,7 @@
       </footer>
     </div>
 
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=0758f9f2-8eef-41cf-9876-aa79719acf2f&lang=ru_RU" type="text/javascript">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=0758f9f2-8eef-41cf-9876-aa79719acf2f&load=package.map&lang=ru_RU" type="text/javascript">
     </script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
