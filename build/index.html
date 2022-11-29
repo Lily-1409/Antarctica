@@ -87,14 +87,14 @@
             <h3>Преимущества</h3>
             <ul class="advantages-list">
               <li class="advantages-item">
-                <svg width="27" height="32">
+                <svg class="advantages-item__liner" width="27" height="32">
                   <use xlink:href="./img/sprite/sprite.svg#liner"></use>
                 </svg>
                 <h4>Небольшой круизный лайнер</h4>
                 <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
               </li>
               <li class="advantages-item">
-                <svg width="38" height="32">
+                <svg class="advantages-item__all-inclusive" width="38" height="32">
                   <use xlink:href="./img/sprite/sprite.svg#all-inclusive"></use>
                 </svg>
                 <h4>Система все&nbsp;включено</h4>
@@ -102,7 +102,7 @@
                 <p>Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
               </li>
               <li class="advantages-item">
-                <svg width="44" height="32">
+                <svg class="advantages-item__excursion-tours" width="44" height="32">
                   <use xlink:href="./img/sprite/sprite.svg#excursion-tours"></use>
                 </svg>
                 <h4>Экскурсионные туры на Zodiac</h4>
@@ -358,7 +358,7 @@
                       </div>
                       <div class="form__mail">
                         <label for="input-3">Email</label>
-                        <input type="tel" id="input-3" placeholder="Email" name="Email" required>
+                        <input type="email" id="input-3" placeholder="Email" name="Email" required>
                       </div>
                     </div>
                     <div class="form__submit">
@@ -391,18 +391,22 @@
                 <ul class="contacts-list">
                   <li class="contacts-item">
                     <a class="contacts-item__link" href="#">
-                      <svg class="contacts-item__icon"  height="22" width="18">
-                        <use xlink:href="./img/sprite/sprite.svg#marker"></use>
-                      </svg>
+                      <div class="contacts-item__image">
+                        <svg class="contacts-item__icon"  height="22" width="24">
+                          <use xlink:href="./img/sprite/sprite.svg#marker"></use>
+                        </svg>
+                      </div>
                       <span>г. Санкт Петербург,
                         ул.&nbsp;Большая&nbsp;Конюшенная,&nbsp;19/8</span>
                     </a>
                   </li>
                   <li class="contacts-item">
                     <a class="contacts-item__link" href="tel:+78002000000">
-                      <svg class="contacts-item__icon"  height="18" width="18">
-                        <use xlink:href="./img/sprite/sprite.svg#phone-handset"></use>
-                      </svg>
+                      <div class="contacts-item__image">
+                        <svg class="contacts-item__icon"  height="18" width="18">
+                          <use xlink:href="./img/sprite/sprite.svg#phone-handset"></use>
+                        </svg>
+                      </div>
                       <span>8-800-200-00-00</span>
                     </a>
                   </li>

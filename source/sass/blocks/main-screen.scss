@@ -26,12 +26,17 @@
   }
 
   @include vp-1023 {
-    min-height: 700px;
+    min-height: 672px;
+    background-position-y: 8px;
   }
 
   @include vp-767 {
     min-height: 592px;
-    background-position-x: -177px;
+  }
+
+  @include vp-374 {
+    min-height: 592px;
+    background-position: 46% -7px;
   }
 }
 

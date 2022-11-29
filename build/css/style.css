@@ -654,6 +654,10 @@ button,
   padding: 10px 20px;
   width: 100%;
   height: 40px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #011c40;
   background-color: #f9fbfd;
   border: none;
@@ -825,6 +829,11 @@ button,
   opacity: 0.7;
 }
 
+.header-open-menu-js .main-nav-toogle {
+  top: -7px;
+  right: -16px;
+}
+
 .logo {
   fill: #f9fbfd;
 }
@@ -879,8 +888,10 @@ button,
 }
 
 .travels {
-  padding: 111px 71px 145px;
+  padding: 120px 71px 145px;
   background-color: #f9fbfd;
+  position: relative;
+  z-index: 5;
 }
 
 .travels-wrapper {
@@ -948,6 +959,8 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .navigation {
@@ -956,6 +969,10 @@ button,
 
 .navigation-item {
   margin-left: 33px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .navigation-link {
@@ -968,6 +985,10 @@ button,
 
 .navigation-link:hover {
   border-bottom: 1px solid #f9fbfd;
+}
+
+.header-open-menu-js .navigation-link:hover {
+  border-bottom: 1px solid #011c40;
 }
 
 .cruise {
@@ -1213,6 +1234,10 @@ button,
 
 .footer-navigation-item {
   margin-left: 33px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .footer-navigation-link {
@@ -1223,8 +1248,13 @@ button,
   color: #f9fbfd;
 }
 
+.footer-navigation-link:hover {
+  border-bottom: 1px solid #f9fbfd;
+}
+
 .advantages {
   padding: 110px 0 120px;
+  background-color: #dae4f2;
   background-image: url("../img/bg-advantages-desktop.jpg");
   background-position: center;
   background-size: cover;
@@ -1256,9 +1286,7 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  -webkit-column-gap: 40px;
-  -moz-column-gap: 40px;
-  column-gap: 40px;
+  gap: 40px;
   padding: 0 70px;
 }
 
@@ -1321,12 +1349,17 @@ button,
   margin-right: -5px;
 }
 
+.networks-item:hover {
+  border: 1px solid #f9fbfd;
+}
+
 .networks-item svg {
   margin: 5px;
   min-width: 20px;
 }
 
 .booking-form {
+  background-color: #dff0fc;
   background-image: url("../img/bg-form-desktop.jpg");
   background-repeat: no-repeat;
   background-position: 50%;
@@ -1341,7 +1374,7 @@ button,
 
 .form-wrapper {
   position: relative;
-  padding: 50px 130px;
+  padding: 50px 130px 51px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1389,7 +1422,7 @@ button,
 
 .form-block {
   background-color: #011c40;
-  padding: 43px 50px 50px;
+  padding: 43px 50px 56px;
   max-width: 404px;
 }
 
@@ -1407,7 +1440,7 @@ button,
 .form__name,
 .form__phone,
 .form__mail {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .form__name label,
@@ -1449,7 +1482,7 @@ button,
 }
 
 .form__checkbox {
-  margin-bottom: 34px;
+  margin-bottom: 36px;
 }
 
 .form__checkbox input[type=checkbox] {
@@ -1528,7 +1561,7 @@ button,
 
 .contacts {
   background-color: #f9fbfd;
-  padding: 120px 0 122px;
+  padding: 120px 0;
 }
 
 .contacts-wrapper {
@@ -1542,6 +1575,10 @@ button,
 }
 
 .ymap-container {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-right: 100px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -1559,12 +1596,8 @@ button,
 }
 
 .map {
-  position: relative;
-  margin-right: 100px;
   width: 560px;
   height: 306px;
-  cursor: pointer;
-  background-image: transparent;
 }
 
 .loader {
@@ -1585,8 +1618,8 @@ button,
   background-color: rgba(0, 0, 0, 0.55);
 }
 
-.loader:after,
-.loader:before {
+.loader::after,
+.loader::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -1655,7 +1688,7 @@ button,
 }
 
 .contacts-information {
-  padding-top: 78px;
+  padding-top: 76px;
 }
 
 .contacts-information p {
@@ -1666,7 +1699,7 @@ button,
   font-size: 18px;
   line-height: 27px;
   color: #011c40;
-  margin-bottom: 29px;
+  margin-bottom: 32px;
 }
 
 .contacts-list {
@@ -1690,8 +1723,10 @@ button,
   display: flex;
 }
 
-.contacts-item__icon {
-  margin-right: 10px;
+.contacts-item__image {
+  width: 22px;
+  height: 18px;
+  margin-right: 5px;
 }
 
 /* @mixin hover-focus {
@@ -1757,7 +1792,8 @@ button,
   }
 
   .main-screen {
-    min-height: 700px;
+    min-height: 672px;
+    background-position-y: 8px;
   }
 
   .main-screen-wrapper {
@@ -1779,6 +1815,7 @@ button,
 
   .travels {
     padding: 100px 26px 95px 21px;
+    margin-top: -6px;
   }
 
   .travels-wrapper__image {
@@ -1966,9 +2003,7 @@ button,
 
   .advantages-list {
     padding: 0 20px;
-    -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
-    column-gap: 30px;
+    gap: 30px;
   }
 
   .advantages-item {
@@ -1977,6 +2012,18 @@ button,
 
   .advantages-list svg {
     height: 26px;
+  }
+
+  .advantages-item__liner {
+    width: 21px;
+  }
+
+  .advantages-item__all-inclusive {
+    width: 27px;
+  }
+
+  .advantages-item__excursion-tours {
+    width: 36px;
   }
 
   .advantages-list h4 {
@@ -2018,7 +2065,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 94px 149px 104px 151px;
+    padding: 94px 149px 102px 151px;
   }
 
   .form-description {
@@ -2039,7 +2086,7 @@ button,
 
   .form-block {
     padding-top: 45px;
-    padding-bottom: 52px;
+    padding-bottom: 57px;
   }
 
   .contacts {
@@ -2051,6 +2098,9 @@ button,
   }
 
   .ymap-container {
+    width: 324px;
+    height: 335px;
+    margin-right: 30px;
     background-image: url("../img/map-tablet.jpg");
   }
 
@@ -2061,13 +2111,12 @@ button,
 }
 
   .map {
-    margin-right: 29px;
     width: 324px;
-    height: 335px;
+    height: 316px;
   }
 
   .contacts-information {
-    padding-top: 66px;
+    padding-top: 65px;
   }
 
   .contacts-information p {
@@ -2075,7 +2124,7 @@ button,
   }
 
   .contacts-item__icon {
-    margin-right: 12px;
+    margin-top: 3px;
   }
 }
 
@@ -2171,12 +2220,12 @@ button,
 }
 
   .booking-form {
-    background-image: url("../../img/bg-form-tablet@2x.jpg");
+    background-image: url("../img/bg-form-tablet@2x.jpg");
   }
 
-@supports (background-image: url("../../img/bg-form-tablet@2x.webp")) {
+@supports (background-image: url("../img/bg-form-tablet@2x.webp")) {
     .booking-form {
-      background-image: url("../../img/bg-form-tablet@2x.webp");
+      background-image: url("../img/bg-form-tablet@2x.webp");
     }
 }
 
@@ -2290,7 +2339,6 @@ button,
 
   .main-screen {
     min-height: 592px;
-    background-position-x: -177px;
   }
 
   .main-screen-wrapper {
@@ -2313,8 +2361,6 @@ button,
   .travels {
     padding: 58px 0 85px;
     margin-top: -86px;
-    position: relative;
-    z-index: 5;
   }
 
   .travels-wrapper {
@@ -2500,7 +2546,7 @@ button,
   }
 
   .footer-logo {
-    margin-bottom: 21px;
+    margin-bottom: 18px;
   }
 
   .footer-logo svg {
@@ -2548,7 +2594,7 @@ button,
     -webkit-column-gap: 0;
     -moz-column-gap: 0;
     column-gap: 0;
-    row-gap: 28px;
+    gap: 28px;
     padding: 0;
   }
 
@@ -2572,12 +2618,12 @@ button,
   }
 
   .booking-form {
-    background-image: url("../../img/bg-form-mobile.jpg");
+    background-image: url("../img/bg-form-mobile.jpg");
   }
 
-@supports (background-image: url("../../img/bg-form-mobile.webp")) {
+@supports (background-image: url("../img/bg-form-mobile.webp")) {
     .booking-form {
-      background-image: url("../../img/bg-form-mobile.webp");
+      background-image: url("../img/bg-form-mobile.webp");
     }
 }
 
@@ -2587,11 +2633,11 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 65px 0 67px;
-    margin-left: -5px;
+    margin-left: -1px;
   }
 
   .form-description {
-    margin-bottom: 42px;
+    margin-bottom: 44px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -2616,13 +2662,13 @@ button,
   }
 
   .form-block {
-    padding: 37px 29px 44px 33px;
+    padding: 37px 29px 44px 30px;
   }
 
   .form-block p {
     line-height: 25px;
     text-align: center;
-    margin: 0 5px 29px 7px;
+    margin: 0 5px 27px 7px;
   }
 
   .form__name input,
@@ -2632,7 +2678,7 @@ button,
   }
 
   .form__checkbox {
-    margin-bottom: 29px;
+    margin-bottom: 27px;
   }
 
   .form__checkbox label {
@@ -2649,7 +2695,7 @@ button,
   }
 
   .contacts {
-    padding: 57px 0 65px;
+    padding: 59px 0 65px;
   }
 
   .contacts-wrapper {
@@ -2662,6 +2708,11 @@ button,
   }
 
   .ymap-container {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 100%;
+    height: 316px;
     background-image: url("../img/map-mobile.jpg");
   }
 
@@ -2675,7 +2726,7 @@ button,
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
-    width: 290px;
+    width: 100%;
     height: 316px;
   }
 
@@ -2780,12 +2831,12 @@ button,
 }
 
   .booking-form {
-    background-image: url("../../img/bg-form-mobile@2x.jpg");
+    background-image: url("../img/bg-form-mobile@2x.jpg");
   }
 
-@supports (background-image: url("../../img/bg-form-mobile@2x.webp")) {
+@supports (background-image: url("../img/bg-form-mobile@2x.webp")) {
     .booking-form {
-      background-image: url("../../img/bg-form-mobile@2x.webp");
+      background-image: url("../img/bg-form-mobile@2x.webp");
     }
 }
 
@@ -2798,6 +2849,13 @@ button,
       background-image: url("../img/map-mobile@2x.webp");
     }
 }
+}
+
+@media (max-width: 374px) {
+  .main-screen {
+    min-height: 592px;
+    background-position: 46% -7px;
+  }
 }
 
 @media (hover: hover) {

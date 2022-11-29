@@ -79,6 +79,11 @@
   }
 }
 
+.header-open-menu-js .main-nav-toogle {
+  top: -7px;
+  right: -16px;
+}
+
 .header-close-menu-js .main-nav-toogle__iconOpen {
   @include vp-767 {
     display: block;

@@ -21,6 +21,10 @@
   }
 }
 
+.networks-item:hover {
+  border: 1px solid $color-alice-blue;
+}
+
 .networks-item svg {
   margin: 5px;
   min-width: 20px;

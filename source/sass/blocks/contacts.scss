@@ -1,13 +1,13 @@
 .contacts {
   background-color: $color-alice-blue;
-  padding: 120px 0 122px;
+  padding: 120px 0;
 
   @include vp-1023 {
     padding: 100px 0;
   }
 
   @include vp-767 {
-    padding: 57px 0 65px;
+    padding: 59px 0 65px;
   }
 }
 
@@ -29,10 +29,12 @@
 
 // стилизация блока с картой
 .ymap-container {
+  flex: 0 0 auto;
+  margin-right: 100px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  background: url('../img/map-desktop.jpg') $color-alice-blue no-repeat;;
+  background: url("../img/map-desktop.jpg") $color-alice-blue no-repeat;
 
   @supports (background-image: url("../img/map-desktop.webp")) {
     background-image: url("../img/map-desktop.webp");
@@ -53,6 +55,9 @@
   }
 
   @include vp-1023 {
+    width: 324px;
+    height: 335px;
+    margin-right: 30px;
     background-image: url("../img/map-tablet.jpg");
 
     @supports (background-image: url("../img/map-tablet.webp")) {
@@ -70,6 +75,9 @@
   }
 
   @include vp-767 {
+    order: 2;
+    width: 100%;
+    height: 316px;
     background-image: url("../img/map-mobile.jpg");
 
     @supports (background-image: url("../img/map-mobile.webp")) {
@@ -88,24 +96,17 @@
 }
 
 .map {
-  position: relative;
-  // flex: 0 0 auto;
-  margin-right: 100px;
-  // width: 100%;
   width: 560px;
   height: 306px;
-  cursor: pointer;
-  background-image: transparent;
 
   @include vp-1023 {
-    margin-right: 29px;
     width: 324px;
-    height: 335px;
+    height: 316px;
   }
 
   @include vp-767 {
     order: 2;
-    width: 290px;
+    width: 100%;
     height: 316px;
   }
 }
@@ -120,12 +121,13 @@
   height: 100%;
   overflow: hidden;
   color: #000000;
-  transition: opacity .7s ease;
+  transition: opacity 0.7s ease;
   opacity: 0;
-  background-color: rgba(0,0,0,.55);
+  background-color: rgba(0, 0, 0, 0.55);
 }
-.loader:after,
-.loader:before {
+
+.loader::after,
+.loader::before {
   box-sizing: border-box;
 }
 
@@ -140,7 +142,7 @@
   left: calc(50% - 24px);
   width: 48px;
   height: 48px;
-  content: '';
+  content: "";
   animation: rotation 1s linear infinite;
   border: solid 8px #ffffff;
   border-left-color: transparent;
@@ -149,8 +151,10 @@
 
 @keyframes rotation {
   from {
+
     transform: rotate(0);
   }
+
   to {
     transform: rotate(359deg);
   }
@@ -158,18 +162,20 @@
 
 @keyframes blink {
   from {
-    opacity: .5;
+
+    opacity: 0.5;
   }
+
   to {
     opacity: 1;
   }
 }
 
 .contacts-information {
-  padding-top: 78px;
+  padding-top: 76px;
 
   @include vp-1023 {
-    padding-top: 66px;
+    padding-top: 65px;
   }
 
   @include vp-767 {
@@ -187,7 +193,7 @@
   font-size: 18px;
   line-height: 27px;
   color: $color-tangaroa;
-  margin-bottom: 29px;
+  margin-bottom: 32px;
 
   @include vp-1023 {
     margin-bottom: 27px;
@@ -213,10 +219,14 @@
   display: flex;
 }
 
-.contacts-item__icon {
-  margin-right: 10px;
+.contacts-item__image {
+  width: 22px;
+  height: 18px;
+  margin-right: 5px;
+}
 
+.contacts-item__icon {
   @include vp-1023 {
-    margin-right: 12px;
+    margin-top: 3px;
   }
 }
