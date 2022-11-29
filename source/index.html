@@ -14,6 +14,8 @@
     <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="img/bg-main-screen-desktop.webp" as="image" />
+    <link rel="preload" href="img/bg-main-screen-desktop@2x.webp" as="image" />
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -379,13 +381,9 @@
         <section class="contacts" id="section4">
           <div class="container">
             <div class="contacts-wrapper">
-              <div class="map" id="map">
-                <div class="map-wrapper">
-                  <picture>
-                    <source type="image/webp" srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x">
-                    <img src="./img/map-desktop.jpg" srcset="./img/map-desktop@2x.jpg" width="560" height="306" alt="картинка карты">
-                  </picture>
-                </div>
+              <div class="ymap-container">
+                <div class="loader loader-default"></div>
+                <div class="map" id="map"></div>
               </div>
               <div class="contacts-information">
                 <p>У вас ещё остались вопросы или сомнения? Приезжайте к нам
@@ -443,21 +441,21 @@
             <div class="social-networks">
               <ul class="networks-list">
                 <li class="networks-item">
-                  <a href="#">
+                  <a href="https://ok.ru/" aria-label="Одноклассники">
                     <svg width="12" height="20">
                       <use xlink:href="./img/sprite/sprite.svg#ok"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="networks-item networks-item--margin">
-                  <a href="#">
+                  <a href="https://dzen.ru/" aria-label="Дзен">
                     <svg width="20" height="20">
                       <use xlink:href="./img/sprite/sprite.svg#dzen"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="networks-item">
-                  <a href="#">
+                  <a href="https://www.reddit.com/" aria-label="Reddit">
                     <svg width="20" height="20">
                       <use xlink:href="./img/sprite/sprite.svg#reddit"></use>
                     </svg>
@@ -470,9 +468,7 @@
       </footer>
     </div>
 
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=0758f9f2-8eef-41cf-9876-aa79719acf2f&load=package.map&lang=ru_RU" type="text/javascript">
-    </script>
-    <script src="js/vendor.min.js"></script>
+    <!-- <script src="js/vendor.min.js"></script> -->
     <script src="js/main.min.js"></script>
   </body>
 </html>

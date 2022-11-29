@@ -1,5 +1,6 @@
 .travels {
   padding: 111px 71px 145px;
+  background-color: $color-alice-blue;
 
   @include vp-1023 {
     padding: 100px 26px 95px 21px;
@@ -7,6 +8,9 @@
 
   @include vp-767 {
     padding: 58px 0 85px;
+    margin-top: -86px;
+    position: relative;
+    z-index: 5;
   }
 }
 

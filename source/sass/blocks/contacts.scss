@@ -27,11 +27,75 @@
   }
 }
 
+// стилизация блока с картой
+.ymap-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: url('../img/map-desktop.jpg') $color-alice-blue no-repeat;;
+
+  @supports (background-image: url("../img/map-desktop.webp")) {
+    background-image: url("../img/map-desktop.webp");
+  }
+
+  background-color: $color-alice-blue;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @media only screen and (min-resolution: 1.5),
+    only screen and (min-resolution: 144dpi) {
+    background-image: url("../img/map-desktop@2x.jpg");
+
+    @supports (background-image: url("../img/map-desktop@2x.webp")) {
+      background-image: url("../img/map-desktop@2x.webp");
+    }
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/map-tablet.jpg");
+
+    @supports (background-image: url("../img/map-tablet.webp")) {
+      background-image: url("../img/map-tablet.webp");
+    }
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/map-tablet@2x.jpg");
+
+      @supports (background-image: url("../img/map-tablet@2x.webp")) {
+        background-image: url("../img/map-tablet@2x.webp");
+      }
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/map-mobile.jpg");
+
+    @supports (background-image: url("../img/map-mobile.webp")) {
+      background-image: url("../img/map-mobile.webp");
+    }
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/map-mobile@2x.jpg");
+
+      @supports (background-image: url("../img/map-mobile@2x.webp")) {
+        background-image: url("../img/map-mobile@2x.webp");
+      }
+    }
+  }
+}
+
 .map {
-  flex: 0 0 auto;
+  position: relative;
+  // flex: 0 0 auto;
   margin-right: 100px;
+  // width: 100%;
   width: 560px;
   height: 306px;
+  cursor: pointer;
+  background-image: transparent;
 
   @include vp-1023 {
     margin-right: 29px;
@@ -46,18 +110,58 @@
   }
 }
 
-.map img {
-  max-width: unset;
-  display: none;
+.loader {
+  position: absolute;
+  z-index: 15;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  transition: opacity .7s ease;
+  opacity: 0;
+  background-color: rgba(0,0,0,.55);
+}
+.loader:after,
+.loader:before {
+  box-sizing: border-box;
+}
 
-  @include vp-1023 {
-    width: 324px;
-    height: 335px;
+.loader.is-active {
+  top: 0;
+  opacity: 1;
+}
+
+.loader-default::after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  animation: rotation 1s linear infinite;
+  border: solid 8px #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0);
   }
+  to {
+    transform: rotate(359deg);
+  }
+}
 
-  @include vp-767 {
-    width: 290px;
-    height: 316px;
+@keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
   }
 }
 

@@ -12,7 +12,7 @@
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 658px;
+  min-height: 650px;
   z-index: 1;
   margin-top: -115px;
 
@@ -26,39 +26,12 @@
   }
 
   @include vp-1023 {
-    background-image: url("../img/bg-main-screen-tablet.jpg");
-
-    @supports (background-image: url("../img/bg-main-screen-tablet.webp")) {
-      background-image: url("../img/bg-main-screen-tablet.webp");
-    }
-    min-height: 666px;
-
-    @media only screen and (min-resolution: 1.5),
-      only screen and (min-resolution: 144dpi) {
-      background-image: url("../img/bg-main-screen-tablet@2x.jpg");
-
-      @supports (background-image: url("../img/bg-main-screen-tablet@2x.webp")) {
-        background-image: url("../img/bg-main-screen-tablet@2x.webp");
-      }
-    }
+    min-height: 700px;
   }
 
   @include vp-767 {
-    min-height: 506px;
-    background-image: url("../img/bg-main-screen-mobile.jpg");
-
-    @supports (background-image: url("../img/bg-main-screen-mobile.webp")) {
-      background-image: url("../img/bg-main-screen-mobile.webp");
-    }
-
-    @media only screen and (min-resolution: 1.5),
-      only screen and (min-resolution: 144dpi) {
-      background-image: url("../img/bg-main-screen-mobile@2x.jpg");
-
-      @supports (background-image: url("../img/bg-main-screen-mobile@2x.webp")) {
-        background-image: url("../img/bg-main-screen-mobile@2x.webp");
-      }
-    }
+    min-height: 592px;
+    background-position-x: -177px;
   }
 }
 
