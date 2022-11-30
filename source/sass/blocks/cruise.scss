@@ -481,12 +481,11 @@
   }
 }
 
-.cruise-item:hover h4 {
+.cruise-item:hover .cruise-card {
   display: none;
 }
 
-.cruise-item:hover .cruise-decription-wrapper,
-.cruise-item:hover .cruise-decription-wrapper h4 {
+.cruise-item:hover .cruise-decription-wrapper {
   display: block;
 }
 

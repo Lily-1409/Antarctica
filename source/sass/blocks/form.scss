@@ -291,7 +291,7 @@
   border: 1px solid $color-quartz;
 }
 
-.form__checkbox label input[type="checkbox"]:focus + span::before {
+.form__checkbox input[type="checkbox"]:focus + span::before {
   background-color: $color-quartz;
   border: 1px solid $color-quartz;
 }
@@ -309,6 +309,6 @@
   background-repeat: no-repeat;
 }
 
-.form__checkbox label input[type="checkbox"]:checked + span::after {
+.form__checkbox input[type="checkbox"]:checked + span::after {
   display: block;
 }

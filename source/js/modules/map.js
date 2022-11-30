@@ -93,4 +93,4 @@ let ymap = function () {
   ));
 };
 
-export default ymap();
+ymap();

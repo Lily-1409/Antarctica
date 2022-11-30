@@ -1110,12 +1110,11 @@ button,
   }
 }
 
-.cruise-item:hover h4 {
+.cruise-item:hover .cruise-card {
   display: none;
 }
 
-.cruise-item:hover .cruise-decription-wrapper,
-.cruise-item:hover .cruise-decription-wrapper h4 {
+.cruise-item:hover .cruise-decription-wrapper {
   display: block;
 }
 
@@ -1535,7 +1534,7 @@ button,
   border: 1px solid #d8d8d9;
 }
 
-.form__checkbox label input[type=checkbox]:focus + span::before {
+.form__checkbox input[type=checkbox]:focus + span::before {
   background-color: #d8d8d9;
   border: 1px solid #d8d8d9;
 }
@@ -1555,7 +1554,7 @@ button,
   background-repeat: no-repeat;
 }
 
-.form__checkbox label input[type=checkbox]:checked + span::after {
+.form__checkbox input[type=checkbox]:checked + span::after {
   display: block;
 }
 
