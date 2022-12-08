@@ -1,7 +1,7 @@
 .header {
   padding: 35px 0;
   margin: 0 72px;
-  z-index: 5;
+  z-index: 10;
 
   @include vp-1023 {
     margin: 0 21px;
@@ -16,7 +16,6 @@
     align-items: flex-start;
     justify-content: flex-start;
     background-color: $color-alice-blue;
-    margin-left: 35px;
   }
 }
 
@@ -24,17 +23,44 @@
   @include vp-767 {
     margin-left: 0;
     background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
   }
 }
 
 .header-open-menu-js {
   @include vp-767 {
     height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+.header-open-menu-js .header-content {
+  @include vp-767 {
     position: absolute;
     top: 0;
     right: 0;
     width: 89%;
+    height: 100%;
     background-color: $color-alice-blue;
+  }
+}
+
+.header-open-menu-js::before {
+  @include vp-767 {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 43, 102, 0.5);
   }
 }
 
@@ -79,26 +105,51 @@
   }
 }
 
-.header-open-menu-js .main-nav-toogle {
-  top: -7px;
-  right: -16px;
+.main-nav-toogle__iconClose {
+  position: absolute;
+  top: 6px;
+  right: 6px;
 }
 
-.header-close-menu-js .main-nav-toogle__iconOpen {
+.main-nav-toogle--close-menu .main-nav-toogle__iconOpen {
   @include vp-767 {
     display: block;
   }
 }
 
-.main-nav-toogle__iconClose {
+.main-nav-toogle--close-menu .main-nav-toogle__iconClose {
   @include vp-767 {
     display: none;
-    margin-top: 5px;
   }
 }
 
-.main-nav-toogle--hidden {
+.main-nav-toogle--open-menu .main-nav-toogle__iconClose {
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.main-nav-toogle--open-menu .main-nav-toogle__iconOpen {
   @include vp-767 {
     display: none;
   }
 }
+
+// .header-close-menu-js .main-nav-toogle__iconOpen {
+//   @include vp-767 {
+//     display: block;
+//   }
+// }
+
+// .main-nav-toogle__iconClose {
+//   @include vp-767 {
+//     display: none;
+//     margin-top: 5px;
+//   }
+// }
+
+// .main-nav-toogle--hidden {
+//   @include vp-767 {
+//     display: none;
+//   }
+// }

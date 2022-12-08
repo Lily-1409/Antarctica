@@ -55,21 +55,24 @@
 .cruise-item {
   padding: 29px 25px 34px;
   background-color: $color-tangaroa;
-  min-height: 386px;
+  height: 0;
   position: relative;
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: $ff-main-font;
   color: $color-alice-blue;
+  padding-bottom: 137.55%;
 
   @include vp-1023 {
     padding: 29px 35px 34px;
+    padding-bottom: 115.55%;
   }
 
   @include vp-767 {
     min-width: 270px;
     padding: 29px 26px 34px;
+    padding-bottom: 131.35%;
   }
 }
 
@@ -513,6 +516,7 @@
   position: absolute;
   bottom: 23px;
   left: 29px;
+  right: 10px;
 
   @include vp-1023 {
     bottom: 27px;

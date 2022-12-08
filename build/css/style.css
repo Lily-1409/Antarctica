@@ -642,9 +642,9 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1286px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 32px;
 }
 
 .btn {
@@ -791,7 +791,7 @@ button,
 .header {
   padding: 35px 0;
   margin: 0 72px;
-  z-index: 5;
+  z-index: 10;
 }
 
 .header-wrapper {
@@ -829,9 +829,10 @@ button,
   opacity: 0.7;
 }
 
-.header-open-menu-js .main-nav-toogle {
-  top: -7px;
-  right: -16px;
+.main-nav-toogle__iconClose {
+  position: absolute;
+  top: 6px;
+  right: 6px;
 }
 
 .logo {
@@ -860,7 +861,7 @@ button,
 
 .main-screen-wrapper {
   padding-top: 270px;
-  padding-left: 167px;
+  padding-left: 126px;
 }
 
 .main-screen-wrapper h2 {
@@ -904,9 +905,9 @@ button,
 }
 
 .travels-wrapper__image {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .travels-wrapper img {
@@ -914,6 +915,10 @@ button,
 }
 
 .travels-description {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 512px;
   margin-top: 56px;
   margin-right: 82px;
   display: -webkit-box;
@@ -1021,13 +1026,14 @@ button,
 .cruise-item {
   padding: 29px 25px 34px;
   background-color: #011c40;
-  min-height: 386px;
+  height: 0;
   position: relative;
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Montserrat", "Arial", sans-serif;
   color: #f9fbfd;
+  padding-bottom: 137.55%;
 }
 
 .cruise-item-one {
@@ -1142,6 +1148,7 @@ button,
   position: absolute;
   bottom: 23px;
   left: 29px;
+  right: 10px;
 }
 
 .cruise-decription-wrapper h4 {
@@ -1286,7 +1293,7 @@ button,
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
-  padding: 0 70px;
+  padding: 0 31px;
 }
 
 .advantages-item {
@@ -1373,7 +1380,7 @@ button,
 
 .form-wrapper {
   position: relative;
-  padding: 50px 130px 51px;
+  padding: 50px 92px 51px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1383,10 +1390,10 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 10px;
 }
 
 .form-description {
-  margin-right: 144px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1422,7 +1429,10 @@ button,
 .form-block {
   background-color: #011c40;
   padding: 43px 50px 56px;
-  max-width: 404px;
+  width: 404px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .form-block p {
@@ -1570,7 +1580,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0 71px;
+  padding: 0 29px;
 }
 
 .ymap-container {
@@ -1769,12 +1779,6 @@ button,
   }
 */
 
-@media (max-width: 1439px) {
-  .container {
-    padding: 0 32px;
-  }
-}
-
 @media (max-width: 1023px) {
   .container {
     padding: 0 24px;
@@ -1792,7 +1796,6 @@ button,
 
   .main-screen {
     min-height: 672px;
-    background-position-y: 8px;
   }
 
   .main-screen-wrapper {
@@ -1824,6 +1827,7 @@ button,
   .travels-description {
     margin-top: -10px;
     margin-right: 22px;
+    width: 324px;
   }
 
   .travels-wrapper h3 {
@@ -1867,6 +1871,7 @@ button,
 
   .cruise-item {
     padding: 29px 35px 34px;
+    padding-bottom: 115.55%;
   }
 
   .cruise-item-one {
@@ -2065,10 +2070,10 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 94px 149px 102px 151px;
+    gap: 0;
   }
 
   .form-description {
-    margin-right: 0;
     margin-bottom: 50px;
   }
 
@@ -2120,6 +2125,10 @@ button,
 
   .contacts-information p {
     margin-bottom: 27px;
+  }
+
+  .contacts-item__link span {
+    display: block;
   }
 
   .contacts-item__icon {
@@ -2272,21 +2281,43 @@ button,
     -ms-flex-pack: start;
     justify-content: flex-start;
     background-color: #f9fbfd;
-    margin-left: 35px;
   }
 
   .header-close-menu-js {
     margin-left: 0;
     background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
   }
 
   .header-open-menu-js {
     height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .header-open-menu-js .header-content {
     position: absolute;
     top: 0;
     right: 0;
     width: 89%;
+    height: 100%;
     background-color: #f9fbfd;
+  }
+
+  .header-open-menu-js::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 43, 102, 0.5);
   }
 
   .header-wrapper {
@@ -2304,16 +2335,19 @@ button,
     display: block;
   }
 
-  .header-close-menu-js .main-nav-toogle__iconOpen {
+  .main-nav-toogle--close-menu .main-nav-toogle__iconOpen {
     display: block;
   }
 
-  .main-nav-toogle__iconClose {
+  .main-nav-toogle--close-menu .main-nav-toogle__iconClose {
     display: none;
-    margin-top: 5px;
   }
 
-  .main-nav-toogle--hidden {
+  .main-nav-toogle--open-menu .main-nav-toogle__iconClose {
+    display: block;
+  }
+
+  .main-nav-toogle--open-menu .main-nav-toogle__iconOpen {
     display: none;
   }
 
@@ -2338,10 +2372,11 @@ button,
 
   .main-screen {
     min-height: 592px;
+    margin-top: 0;
   }
 
   .main-screen-wrapper {
-    padding-top: 182px;
+    padding-top: 176px;
     padding-left: 0;
   }
 
@@ -2376,6 +2411,7 @@ button,
   .travels-description {
     margin-top: 0;
     margin-right: 0;
+    width: 100%;
   }
 
   .travels-wrapper h3 {
@@ -2385,7 +2421,6 @@ button,
 
   .travels-wrapper p {
     margin-bottom: 42px;
-    min-width: 280px;
   }
 
   .header-close-menu-js .navigation-list {
@@ -2437,6 +2472,7 @@ button,
   .cruise-item {
     min-width: 270px;
     padding: 29px 26px 34px;
+    padding-bottom: 131.35%;
   }
 
   .cruise-item-one {
@@ -2662,12 +2698,17 @@ button,
 
   .form-block {
     padding: 37px 29px 44px 30px;
+    width: unset;
   }
 
   .form-block p {
     line-height: 25px;
     text-align: center;
     margin: 0 5px 27px 7px;
+  }
+
+  .form-block span {
+    display: block;
   }
 
   .form__name input,
@@ -2734,7 +2775,7 @@ button,
     -ms-flex-order: 1;
     order: 1;
     margin-bottom: 16px;
-    padding: 0 5px;
+    padding: 0 3px;
   }
 }
 
@@ -2854,6 +2895,10 @@ button,
   .main-screen {
     min-height: 592px;
     background-position: 46% -7px;
+  }
+
+  .main-screen {
+    min-height: 586px;
   }
 }
 

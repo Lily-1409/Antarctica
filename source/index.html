@@ -22,37 +22,39 @@
     <div class="wrapper">
       <!-- To open menu by JS: .header-close-menu-js (header-open-menu-js -открытое меню) -->
       <header class="header header-close-menu-js">
-        <div class="container">
-          <div class="header-wrapper">
-            <a class="logo">
-              <svg width="70" height="38">
-                <use xlink:href="./img/sprite/sprite.svg#logotype"></use>
-              </svg>
-            </a>
-            <button class="main-nav-toogle" type="button" aria-label="Кнопка открытия меню">
-              <svg class="main-nav-toogle__iconOpen" width="25" height="25">
-                <use xlink:href="./img/sprite/sprite.svg#icon-open"></use>
-              </svg>
-              <svg class="main-nav-toogle__iconClose" width="15" height="15">
-                <use xlink:href="./img/sprite/sprite.svg#icon-close"></use>
-              </svg>
-            </button>
-            <nav class="navigation">
-              <ul class="navigation-list">
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#section1">Преимущества</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#">Направления</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#section3">Ближайшие круизы</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#section4">Контакты</a>
-                </li>
-              </ul>
-            </nav>
+        <div class="header-content">
+          <div class="container">
+            <div class="header-wrapper">
+              <a class="logo">
+                <svg width="70" height="38">
+                  <use xlink:href="./img/sprite/sprite.svg#logotype"></use>
+                </svg>
+              </a>
+              <button class="main-nav-toogle main-nav-toogle--close-menu" type="button" aria-label="Кнопка открытия меню">
+                <svg class="main-nav-toogle__iconOpen" width="25" height="25">
+                  <use xlink:href="./img/sprite/sprite.svg#icon-open"></use>
+                </svg>
+                <svg class="main-nav-toogle__iconClose" width="15" height="15">
+                  <use xlink:href="./img/sprite/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+              <nav class="navigation">
+                <ul class="navigation-list">
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#section1">Преимущества</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#">Направления</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#section3">Ближайшие круизы</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#section4">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </header>
@@ -343,7 +345,7 @@
                   до&nbsp;даты&nbsp;выезда</span> и сэкономьте до&nbsp;50%</p>
               </div>
               <div class="form-block">
-                <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в ближайшее время</p>
+                <p><span>Оставьте заявку</span> и мы свяжемся с вами в ближайшее время</p>
                 <div class="form">
                   <form action="https://echo.htmlacademy.ru/" method="post">
                     <div class="form__container">
@@ -386,7 +388,7 @@
                 <div class="map" id="map"></div>
               </div>
               <div class="contacts-information">
-                <p>У вас ещё остались вопросы или сомнения? Приезжайте к нам
+                <p>У вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам
                   в&nbsp;офис и мы вам все расскажем.</p>
                 <ul class="contacts-list">
                   <li class="contacts-item">
@@ -397,7 +399,8 @@
                         </svg>
                       </div>
                       <span>г. Санкт Петербург,
-                        ул.&nbsp;Большая&nbsp;Конюшенная,&nbsp;19/8</span>
+                        <span>ул. Большая Конюшенная, 19/8</span>
+                      </span>
                     </a>
                   </li>
                   <li class="contacts-item">
