@@ -65,13 +65,11 @@
   padding-bottom: 137.55%;
 
   @include vp-1023 {
-    padding: 29px 35px 34px;
     padding-bottom: 115.55%;
   }
 
   @include vp-767 {
     min-width: 270px;
-    padding: 29px 26px 34px;
     padding-bottom: 131.35%;
   }
 }
@@ -484,15 +482,18 @@
   }
 }
 
-.cruise-item:hover .cruise-card {
+.cruise-item:hover .cruise-card,
+.cruise-item:focus .cruise-card {
   display: none;
 }
 
-.cruise-item:hover .cruise-decription-wrapper {
+.cruise-item:hover .cruise-decription-wrapper,
+.cruise-item:focus .cruise-decription-wrapper {
   display: block;
 }
 
-.cruise-item:hover {
+.cruise-item:hover,
+.cruise-item:focus {
   background-color: $color-tangaroa;
   background-image: unset;
 }
@@ -535,6 +536,21 @@
 
 .cruise-decription-wrapper {
   display: none;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px;
+  height: 100%;
+
+  @include vp-1023 {
+    padding: 29px 35px 34px;
+  }
+
+  @include vp-767 {
+    padding: 29px 26px 34px;
+  }
 }
 
 .cruise-decription {
@@ -563,4 +579,8 @@
   font-size: 14px;
   line-height: 21px;
   padding-top: 10px;
+}
+
+.cruise-item:focus .cruise-button{
+  border: 1px solid orange;
 }

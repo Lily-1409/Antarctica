@@ -1116,15 +1116,18 @@ button,
   }
 }
 
-.cruise-item:hover .cruise-card {
+.cruise-item:hover .cruise-card,
+.cruise-item:focus .cruise-card {
   display: none;
 }
 
-.cruise-item:hover .cruise-decription-wrapper {
+.cruise-item:hover .cruise-decription-wrapper,
+.cruise-item:focus .cruise-decription-wrapper {
   display: block;
 }
 
-.cruise-item:hover {
+.cruise-item:hover,
+.cruise-item:focus {
   background-color: #011c40;
   background-image: unset;
 }
@@ -1157,6 +1160,13 @@ button,
 
 .cruise-decription-wrapper {
   display: none;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px;
+  height: 100%;
 }
 
 .cruise-decription {
@@ -1185,6 +1195,10 @@ button,
   font-size: 14px;
   line-height: 21px;
   padding-top: 10px;
+}
+
+.cruise-item:focus .cruise-button {
+  border: 1px solid orange;
 }
 
 .footer {
@@ -1697,7 +1711,7 @@ button,
 }
 
 .contacts-information {
-  padding-top: 76px;
+  padding-top: 74px;
 }
 
 .contacts-information p {
@@ -1718,7 +1732,7 @@ button,
 }
 
 .contacts-item {
-  margin-bottom: 21px;
+  margin-bottom: 17px;
 }
 
 .contacts-item__link {
@@ -1727,9 +1741,9 @@ button,
   font-size: 16px;
   line-height: 24px;
   color: #011c40;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .contacts-item__image {
@@ -1870,7 +1884,6 @@ button,
   }
 
   .cruise-item {
-    padding: 29px 35px 34px;
     padding-bottom: 115.55%;
   }
 
@@ -1957,6 +1970,10 @@ button,
   .cruise-card h4 {
     bottom: 27px;
     left: 35px;
+  }
+
+  .cruise-decription-wrapper {
+    padding: 29px 35px 34px;
   }
 
   .footer {
@@ -2125,6 +2142,10 @@ button,
 
   .contacts-information p {
     margin-bottom: 27px;
+  }
+
+  .contacts-item {
+    margin-bottom: 21px;
   }
 
   .contacts-item__link span {
@@ -2471,7 +2492,6 @@ button,
 
   .cruise-item {
     min-width: 270px;
-    padding: 29px 26px 34px;
     padding-bottom: 131.35%;
   }
 
@@ -2558,6 +2578,10 @@ button,
   .cruise-card h4 {
     bottom: 16px;
     left: 26px;
+  }
+
+  .cruise-decription-wrapper {
+    padding: 29px 26px 34px;
   }
 
   .footer {
@@ -2735,7 +2759,7 @@ button,
   }
 
   .contacts {
-    padding: 59px 0 65px;
+    padding: 59px 0 64px;
   }
 
   .contacts-wrapper {
@@ -2774,7 +2798,7 @@ button,
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
-    margin-bottom: 16px;
+    margin-bottom: 9px;
     padding: 0 3px;
   }
 }

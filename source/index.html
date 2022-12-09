@@ -117,7 +117,7 @@
           <div class="container">
             <h3>Ближайшие круизы</h3>
             <ul class="cruise-list">
-              <li class="cruise-item cruise-item-one">
+              <li class="cruise-item cruise-item-one" tabindex="0">
                 <div class="cruise-card">
                   <h4>Круиз “Астория”</h4>
                 </div>
@@ -144,7 +144,7 @@
                   <a class="cruise-button btn" href="#" target="_blank">Забронировать</a>
                 </div>
               </li>
-              <li class="cruise-item cruise-item-one">
+              <li class="cruise-item cruise-item-one" tabindex="0">
                 <div class="cruise-card">
                   <h4>Круиз "Элайн"</h4>
                 </div>
@@ -171,7 +171,7 @@
                   <a class="cruise-button btn" href="#" target="_blank">Забронировать</a>
                 </div>
               </li>
-              <li class="cruise-item cruise-item-three">
+              <li class="cruise-item cruise-item-three" tabindex="0">
                 <div class="cruise-card">
                   <h4>Круиз “Атлантис”</h4>
                 </div>
@@ -198,7 +198,7 @@
                   <a class="cruise-button btn" href="#" target="_blank">Забронировать</a>
                 </div>
               </li>
-              <li class="cruise-item cruise-item-four">
+              <li class="cruise-item cruise-item-four" tabindex="0">
                 <div class="cruise-card">
                     <h4>Круиз “Одиссей”</h4>
                 </div>
@@ -225,7 +225,7 @@
                   <a class="cruise-button btn" href="#" target="_blank">Забронировать</a>
                 </div>
               </li>
-              <li class="cruise-item cruise-item-five">
+              <li class="cruise-item cruise-item-five" tabindex="0">
                 <div class="cruise-card">
                   <h4>Круиз “Олимпия”</h4>
                 </div>
@@ -252,7 +252,7 @@
                   <a class="cruise-button btn" href="#" target="_blank">Забронировать</a>
                 </div>
               </li>
-              <li class="cruise-item cruise-item-six">
+              <li class="cruise-item cruise-item-six" tabindex="0">
                 <div class="cruise-card">
                   <h4>Круиз “Аврора”</h4>
                 </div>
@@ -279,7 +279,7 @@
                   <a class="cruise-button btn" href="#" target="_blank">Забронировать</a>
                 </div>
               </li>
-              <li class="cruise-item cruise-item-seven">
+              <li class="cruise-item cruise-item-seven" tabindex="0">
                 <div class="cruise-card">
                   <h4>Круиз “Леонор”</h4>
                 </div>
@@ -306,7 +306,7 @@
                   <a class="cruise-button btn" href="#" target="_blank">Забронировать</a>
                 </div>
               </li>
-              <li class="cruise-item cruise-item-eight">
+              <li class="cruise-item cruise-item-eight" tabindex="0">
                 <div class="cruise-card">
                   <h4>Круиз “Минион - 1”</h4>
                 </div>
@@ -351,12 +351,12 @@
                     <div class="form__container">
                       <div class="form__name">
                         <label for="input-1">Имя</label>
-                        <input type="text" id="input-1" placeholder="Имя" required name="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]{1,100}" title="Разрешено использовать латинские и русские буквы">
+                        <input type="text" id="input-1" placeholder="Имя" required name="Имя" pattern="^([A-Za-z\-\']{1,50})|([А-Яа-я\-\']{1,50}" title="Разрешено использовать латинские и русские буквы">
                       </div>
                       <div class="form__phone">
                         <label for="input-2">Телефон</label>
-                        <input type="tel" id="input-2" placeholder="Телефон" name="Телефон" required pattern="[0-9]{11}"
-                        title="разрешено использовать только цифры, число вводимых цифр должно соответсвовать 12">
+                        <input type="tel" id="input-2" placeholder="Телефон" name="Телефон" required pattern="^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$"
+                        title="разрешено использовать только цифры">
                       </div>
                       <div class="form__mail">
                         <label for="input-3">Email</label>

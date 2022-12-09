@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding: 59px 0 65px;
+    padding: 59px 0 64px;
   }
 }
 
@@ -172,7 +172,7 @@
 }
 
 .contacts-information {
-  padding-top: 76px;
+  padding-top: 74px;
 
   @include vp-1023 {
     padding-top: 65px;
@@ -180,7 +180,7 @@
 
   @include vp-767 {
     order: 1;
-    margin-bottom: 16px;
+    margin-bottom: 9px;
     padding: 0 3px;
   }
 }
@@ -207,7 +207,11 @@
 }
 
 .contacts-item {
-  margin-bottom: 21px;
+  margin-bottom: 17px;
+
+  @include vp-1023 {
+    margin-bottom: 21px;
+  }
 }
 
 .contacts-item__link {
@@ -216,7 +220,7 @@
   font-size: 16px;
   line-height: 24px;
   color: $color-tangaroa;
-  display: flex;
+  display: inline-flex;
 }
 
 .contacts-item__link span{
