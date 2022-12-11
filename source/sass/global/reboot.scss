@@ -11,6 +11,12 @@ body {
   min-height: 100vh;
 }
 
+body.lock{
+  @include vp-767 {
+    overflow: hidden;
+  }
+}
+
 html {
   font-style: normal;
   font-weight: 400;

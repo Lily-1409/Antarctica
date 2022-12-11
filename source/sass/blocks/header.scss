@@ -49,6 +49,7 @@
     width: 89%;
     height: 100%;
     background-color: $color-alice-blue;
+    overflow: auto;
   }
 }
 
@@ -134,22 +135,3 @@
     display: none;
   }
 }
-
-// .header-close-menu-js .main-nav-toogle__iconOpen {
-//   @include vp-767 {
-//     display: block;
-//   }
-// }
-
-// .main-nav-toogle__iconClose {
-//   @include vp-767 {
-//     display: none;
-//     margin-top: 5px;
-//   }
-// }
-
-// .main-nav-toogle--hidden {
-//   @include vp-767 {
-//     display: none;
-//   }
-// }

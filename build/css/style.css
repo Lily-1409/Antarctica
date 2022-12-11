@@ -2270,6 +2270,10 @@ button,
 }
 
 @media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+
   .container {
     padding: 0 16px;
   }
@@ -2329,6 +2333,7 @@ button,
     width: 89%;
     height: 100%;
     background-color: #f9fbfd;
+    overflow: auto;
   }
 
   .header-open-menu-js::before {
