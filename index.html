@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта">
+    <title>Антарктика</title>
+    <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="img/bg-main-screen-desktop.webp" as="image" />
+    <link rel="preload" href="img/bg-main-screen-desktop@2x.webp" as="image" />
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- To open menu by JS: .header-close-menu-js (header-open-menu-js -открытое меню) -->
+      <header class="header">
+        <div class="header-content">
+          <div class="container">
+            <div class="header-wrapper">
+              <a class="logo">
+                <svg width="70" height="38">
+                  <use xlink:href="./img/sprite/sprite.svg#logotype"></use>
+                </svg>
+              </a>
+              <button class="main-nav-toogle main-nav-toogle--close-menu" type="button" aria-label="Кнопка открытия меню">
+                <svg class="main-nav-toogle__iconOpen" width="25" height="25">
+                  <use xlink:href="./img/sprite/sprite.svg#icon-open"></use>
+                </svg>
+                <svg class="main-nav-toogle__iconClose" width="15" height="15">
+                  <use xlink:href="./img/sprite/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+              <nav class="navigation">
+                <ul class="navigation-list">
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#section1">Преимущества</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#">Направления</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#section3">Ближайшие круизы</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#section4">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <h1 class="visually-hidden">Круизы в Антарктику</h1>
+        <section class="main-screen">
+          <div class="container">
+            <div class="main-screen-wrapper">
+              <h2>Круизы в&nbsp;Антарктику</h2>
+              <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
+            </div>
+          </div>
+        </section>
+        <article class="travels">
+          <div class="container">
+            <div class="travels-wrapper">
+              <div class="travels-description">
+                <h3>Путешествие нa&nbsp;край Земли</h3>
+                <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+              </div>
+              <div class="travels-wrapper__image">
+                <picture>
+                  <source type="image/webp" srcset="./img/travels-desktop.webp 1x, ./img/travels-desktop@2x.webp 2x">
+                  <img src="./img/travels-desktop.jpg" srcset="./img/travels-desktop@2x.jpg 2x" width="560" height="301" alt="Изображение пингвина">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </article>
+        <section class="advantages" id="section1">
+          <div class="container">
+            <h3>Преимущества</h3>
+            <ul class="advantages-list">
+              <li class="advantages-item">
+                <svg class="advantages-item__liner" width="27" height="32">
+                  <use xlink:href="./img/sprite/sprite.svg#liner"></use>
+                </svg>
+                <h4>Небольшой круизный лайнер</h4>
+                <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+              </li>
+              <li class="advantages-item">
+                <svg class="advantages-item__all-inclusive" width="38" height="32">
+                  <use xlink:href="./img/sprite/sprite.svg#all-inclusive"></use>
+                </svg>
+                <h4>Система все&nbsp;включено</h4>
+                <p>Все наши круизы работают по <span>системе “Все Включено”.</span></p>
+                <p>Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
+              </li>
+              <li class="advantages-item">
+                <svg class="advantages-item__excursion-tours" width="44" height="32">
+                  <use xlink:href="./img/sprite/sprite.svg#excursion-tours"></use>
+                </svg>
+                <h4>Экскурсионные туры на Zodiac</h4>
+                <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiack c опытными экскурсоводами. </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="cruise" id="section3">
+          <div class="container">
+            <h3>Ближайшие круизы</h3>
+            <ul class="cruise-list">
+              <li class="cruise-item cruise-item-one" tabindex="0">
+                <div class="cruise-card">
+                  <h4>Круиз “Астория”</h4>
+                </div>
+                <div class="cruise-decription-wrapper">
+                  <h4>Круиз “Астория”</h4>
+                  <ul class="cruise-decription">
+                    <li>
+                      <h5>Маршрут</h5>
+                      <span>Аргентина - Фолклендские острова - Антарктида</span>
+                    </li>
+                    <li>
+                      <h5>Порт отправления:</h5>
+                      <span>Ушуайя</span>
+                    </li>
+                    <li>
+                      <h5>Продолжительность</h5>
+                      <span>11 дней</span>
+                    </li>
+                    <li>
+                      <h5>Цена</h5>
+                      <span>от 11500 $</span>
+                    </li>
+                  </ul>
+                  <a class="cruise-button btn" href="#" target="_blank">Забронировать</a>
+                </div>
+              </li>
+              <li class="cruise-item cruise-item-one" tabindex="0">
+                <div class="cruise-card">
+                  <h4>Круиз "Элайн"</h4>
+                </div>
+                <div class="cruise-decription-wrapper">
+                  <h4>Круиз "Элайн"</h4>
+                  <ul class="cruise-decription">
+                    <li>
+                      <h5>Маршрут</h5>
+                      <span>Аргентина - Фолклендские острова - Антарктида - Чили</span>
+                    </li>
+                    <li>
+                      <h5>Порт отправления</h5>
+                      <span>Буэнос-Айрес</span>
+                    </li>
+                    <li>
+                      <h5>Продолжительность</h5>
+                      <span>20 дней</span>
+                    </li>
+                    <li>
+                      <h5>Цена</h5>
+                      <span>от 14500 $</span>
+                    </li>
+                  </ul>
+                  <a class="cruise-button btn" href="#" target="_blank">Забронировать</a>
+                </div>
+              </li>
+              <li class="cruise-item cruise-item-three" tabindex="0">
+                <div class="cruise-card">
+                  <h4>Круиз “Атлантис”</h4>
+                </div>
+                <div class="cruise-decription-wrapper">
+                  <h4>Круиз “Атлантис”</h4>
+                  <ul class="cruise-decription">
+                    <li>
+                      <h5>Маршрут</h5>
+                      <span>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</span>
+                    </li>
+                    <li>
+                      <h5>Порт отправления</h5>
+                      <span>Ушуайя</span>
+                    </li>
+                    <li>
+                      <h5>Продолжительность</h5>
+                      <span>15 дней</span>
+                    </li>
+                    <li>
+                      <h5>Цена</h5>
+                      <span>от 14500 $</span>
+                    </li>
+                  </ul>
+                  <a class="cruise-button btn" href="#" target="_blank">Забронировать</a>
+                </div>
+              </li>
+              <li class="cruise-item cruise-item-four" tabindex="0">
+                <div class="cruise-card">
+                    <h4>Круиз “Одиссей”</h4>
+                </div>
+                <div class="cruise-decription-wrapper">
+                  <h4>Круиз “Одиссей”</h4>
+                  <ul class="cruise-decription">
+                    <li>
+                      <h5>Маршрут</h5>
+                      <span>Чили - Антарктида</span>
+                    </li>
+                    <li>
+                      <h5>Порт отправления</h5>
+                      <span>Пунта-Аренас</span>
+                    </li>
+                    <li>
+                      <h5>Продолжительность</h5>
+                      <span>13 дней</span>
+                    </li>
+                    <li>
+                      <h5>Цена</h5>
+                      <span>от 9700 $</span>
+                    </li>
+                  </ul>
+                  <a class="cruise-button btn" href="#" target="_blank">Забронировать</a>
+                </div>
+              </li>
+              <li class="cruise-item cruise-item-five" tabindex="0">
+                <div class="cruise-card">
+                  <h4>Круиз “Олимпия”</h4>
+                </div>
+                <div class="cruise-decription-wrapper">
+                  <h4>Круиз “Олимпия”</h4>
+                  <ul class="cruise-decription">
+                    <li>
+                      <h5>Маршрут</h5>
+                      <span>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</span>
+                    </li>
+                    <li>
+                      <h5>Порт отправления</h5>
+                      <span>Ушуайя</span>
+                    </li>
+                    <li>
+                      <h5>Продолжительность</h5>
+                      <span>21 дней</span>
+                    </li>
+                    <li>
+                      <h5>Цена</h5>
+                      <span>от 18600 $</span>
+                    </li>
+                  </ul>
+                  <a class="cruise-button btn" href="#" target="_blank">Забронировать</a>
+                </div>
+              </li>
+              <li class="cruise-item cruise-item-six" tabindex="0">
+                <div class="cruise-card">
+                  <h4>Круиз “Аврора”</h4>
+                </div>
+                <div class="cruise-decription-wrapper">
+                  <h4>Круиз “Аврора”</h4>
+                  <ul class="cruise-decription">
+                    <li>
+                      <h5>Маршрут</h5>
+                      <span>Аргентина - Антарктида - Чили</span>
+                    </li>
+                    <li>
+                      <h5>Порт отправления</h5>
+                      <span>Ушуайя</span>
+                    </li>
+                    <li>
+                      <h5>Продолжительность</h5>
+                      <span>14 дней</span>
+                    </li>
+                    <li>
+                      <h5>Цена</h5>
+                      <span>от 11700 $</span>
+                    </li>
+                  </ul>
+                  <a class="cruise-button btn" href="#" target="_blank">Забронировать</a>
+                </div>
+              </li>
+              <li class="cruise-item cruise-item-seven" tabindex="0">
+                <div class="cruise-card">
+                  <h4>Круиз “Леонор”</h4>
+                </div>
+                <div class="cruise-decription-wrapper">
+                  <h4>Круиз “Леонор”</h4>
+                  <ul class="cruise-decription">
+                    <li>
+                      <h5>Маршрут</h5>
+                      <span>Чили - Южная Георгия - Антарктида - Аргентина</span>
+                    </li>
+                    <li>
+                      <h5>Порт отправления</h5>
+                      <span>Пунта-Аренас</span>
+                    </li>
+                    <li>
+                      <h5>Продолжительность</h5>
+                      <span>17 дней</span>
+                    </li>
+                    <li>
+                      <h5>Цена</h5>
+                      <span>от 12500 $</span>
+                    </li>
+                  </ul>
+                  <a class="cruise-button btn" href="#" target="_blank">Забронировать</a>
+                </div>
+              </li>
+              <li class="cruise-item cruise-item-eight" tabindex="0">
+                <div class="cruise-card">
+                  <h4>Круиз “Минион - 1”</h4>
+                </div>
+                <div class="cruise-decription-wrapper">
+                  <h4>Круиз “Минион - 1”</h4>
+                  <ul class="cruise-decription">
+                    <li>
+                      <h5>Маршрут</h5>
+                      <span>Аргентина - Антарктида</span>
+                    </li>
+                    <li>
+                      <h5>Порт отправления</h5>
+                      <span>Ушуайя</span>
+                    </li>
+                    <li>
+                      <h5>Продолжительность</h5>
+                      <span>11 дней</span>
+                    </li>
+                    <li>
+                      <h5>Цена</h5>
+                      <span>от 12300 $</span>
+                    </li>
+                  </ul>
+                  <a class="cruise-button btn" href="#" target="_blank">Забронировать</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="booking-form">
+          <div class="container">
+            <div class="form-wrapper">
+              <div class="form-description">
+                <h2>Раннее бронирование</h2>
+                <p>Забронируйте тур <span> за 3-6&nbsp;месяцев
+                  до&nbsp;даты&nbsp;выезда</span> и сэкономьте до&nbsp;50%</p>
+              </div>
+              <div class="form-block">
+                <p><span>Оставьте заявку</span> и мы свяжемся с вами в ближайшее время</p>
+                <div class="form">
+                  <form action="https://echo.htmlacademy.ru/" method="post">
+                    <div class="form__container">
+                      <div class="form__name">
+                        <label for="input-1">Имя</label>
+                        <input type="text" id="input-1" placeholder="Имя" required name="Имя" pattern="^([A-Za-z\-\']{1,50})|([А-Яа-я\-\']{1,50}" title="Разрешено использовать латинские и русские буквы">
+                      </div>
+                      <div class="form__phone">
+                        <label for="input-2">Телефон</label>
+                        <input type="tel" id="input-2" placeholder="Телефон" name="Телефон" required pattern="^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$"
+                        title="разрешено использовать только цифры">
+                      </div>
+                      <div class="form__mail">
+                        <label for="input-3">Email</label>
+                        <input type="email" id="input-3" placeholder="Email" name="Email" required>
+                      </div>
+                    </div>
+                    <div class="form__submit">
+                      <div class="form__checkbox">
+                        <label>
+                          <input type="checkbox" required>
+                          <span>Я согласен на обработку персональных данных</span>
+                        </label>
+                      </div>
+                      <div class="form__button">
+                        <input class="btn" type="submit" value="Оставить заявку">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts" id="section4">
+          <div class="container">
+            <div class="contacts-wrapper">
+              <div class="ymap-container">
+                <div class="loader loader-default"></div>
+                <div class="map" id="map"></div>
+              </div>
+              <div class="contacts-information">
+                <p>У вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам
+                  в&nbsp;офис и мы вам все расскажем.</p>
+                <ul class="contacts-list">
+                  <li class="contacts-item">
+                    <a class="contacts-item__link" href="#">
+                      <div class="contacts-item__image">
+                        <svg class="contacts-item__icon"  height="22" width="24">
+                          <use xlink:href="./img/sprite/sprite.svg#marker"></use>
+                        </svg>
+                      </div>
+                      <span>г. Санкт Петербург,
+                        <span>ул. Большая Конюшенная, 19/8</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="contacts-item">
+                    <a class="contacts-item__link" href="tel:+78002000000">
+                      <div class="contacts-item__image">
+                        <svg class="contacts-item__icon"  height="18" width="18">
+                          <use xlink:href="./img/sprite/sprite.svg#phone-handset"></use>
+                        </svg>
+                      </div>
+                      <span>8-800-200-00-00</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer-nav">
+              <a class="footer-logo">
+                <svg width="70" height="38">
+                  <use xlink:href="./img/sprite/sprite.svg#logotype"></use>
+                </svg>
+              </a>
+              <nav class="footer-navigation">
+                <ul class="footer-navigation-list">
+                  <li class="footer-navigation-item">
+                    <a class="footer-navigation-link" href="#section1">Преимущества</a>
+                  </li>
+                  <li class="footer-navigation-item">
+                    <a class="footer-navigation-link" href="#">Направления</a>
+                  </li>
+                  <li class="footer-navigation-item">
+                    <a class="footer-navigation-link" href="#section3">Ближайшие круизы</a>
+                  </li>
+                  <li class="footer-navigation-item">
+                    <a class="footer-navigation-link" href="#section4">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="social-networks">
+              <ul class="networks-list">
+                <li class="networks-item">
+                  <a href="https://ok.ru/" aria-label="Одноклассники">
+                    <svg width="12" height="20">
+                      <use xlink:href="./img/sprite/sprite.svg#ok"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="networks-item networks-item--margin">
+                  <a href="https://dzen.ru/" aria-label="Дзен">
+                    <svg width="20" height="20">
+                      <use xlink:href="./img/sprite/sprite.svg#dzen"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="networks-item">
+                  <a href="https://www.reddit.com/" aria-label="Reddit">
+                    <svg width="20" height="20">
+                      <use xlink:href="./img/sprite/sprite.svg#reddit"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- <script src="js/vendor.min.js"></script> -->
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
